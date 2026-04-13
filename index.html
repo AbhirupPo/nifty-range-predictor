@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIFTY Range Predictor</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NIFTY Range Predictor</h1>
+      <p>Estimate NIFTY range over a chosen number of days using three different models.</p>
+    </header>
+
+    <section class="controls card">
+      <div class="input-group">
+        <label for="daysInput">Number of days</label>
+        <input id="daysInput" type="number" min="1" max="60" value="5" />
+      </div>
+
+      <div class="input-group">
+        <label for="spotInput">Current NIFTY level</label>
+        <input id="spotInput" type="number" min="1000" step="0.01" value="22500" />
+      </div>
+
+      <div class="input-group">
+        <label for="vixInput">India VIX</label>
+        <input id="vixInput" type="number" min="1" step="0.01" value="15" />
+      </div>
+
+      <button id="runBtn">Generate Predictions</button>
+    </section>
+
+    <section class="results-grid">
+      <div class="card result-card">
+        <h2>1. Simple Multimodal Model</h2>
+        <p class="model-desc">Blends historical drift and volatility into a simple horizon-based range.</p>
+        <div class="range" id="simpleRange">-</div>
+        <div class="meta" id="simpleMeta"></div>
+      </div>
+
+      <div class="card result-card">
+        <h2>2. Markov Chain + Monte Carlo</h2>
+        <p class="model-desc">Uses return regimes and state transition probabilities to simulate price paths.</p>
+        <div class="range" id="markovRange">-</div>
+        <div class="meta" id="markovMeta"></div>
+      </div>
+
+      <div class="card result-card">
+        <h2>3. VIX-Conditioned Markov + Monte Carlo</h2>
+        <p class="model-desc">Conditions transition behaviour on VIX regime before running Monte Carlo simulations.</p>
+        <div class="range" id="vixRange">-</div>
+        <div class="meta" id="vixMeta"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Forecast Distribution</h2>
+      <div id="chart"></div>
+    </section>
+
+    <section class="card notes">
+      <h2>How to replace placeholders with your real models</h2>
+      <ol>
+        <li>Replace the placeholder parameters in <code>app.js</code> with values estimated from your own NIFTY data.</li>
+        <li>Swap the simple model formula with your trained multimodal model output.</li>
+        <li>Replace the transition matrices with those built from your Markov regime classification.</li>
+        <li>Update the VIX threshold logic with your empirically estimated VIX states and conditional matrices.</li>
+      </ol>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
