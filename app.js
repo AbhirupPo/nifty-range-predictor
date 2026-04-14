@@ -1,159 +1,278 @@
-function formatNumber(x) {
-  return Math.round(x).toLocaleString('en-IN');
+async function loadJSON(path) {
+  const res = await fetch(path);
+  if (!res.ok) {
+    throw new Error(`Failed to load ${path}`);
+  }
+  return await res.json();
 }
 
-function percentile(sortedArr, p) {
-  const idx = (sortedArr.length - 1) * p;
+function percentile(arr, p) {
+  if (!arr.length) return NaN;
+  const sorted = [...arr].sort((a, b) => a - b);
+  const idx = (p / 100) * (sorted.length - 1);
   const lower = Math.floor(idx);
   const upper = Math.ceil(idx);
-  if (lower === upper) return sortedArr[lower];
-  return sortedArr[lower] + (sortedArr[upper] - sortedArr[lower]) * (idx - lower);
+  if (lower === upper) return sorted[lower];
+  return sorted[lower] + (sorted[upper] - sorted[lower]) * (idx - lower);
 }
 
-function randn() {
-  let u = 0;
-  let v = 0;
-  while (u === 0) u = Math.random();
-  while (v === 0) v = Math.random();
-  return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+function randomChoice(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
-function simpleMultimodalModel(spot, days, vix) {
-  const dailyDrift = 0.0004;
-  const baseDailyVol = 0.009;
-  const vixScaler = 1 + (vix - 15) * 0.025;
-  const horizonVol = baseDailyVol * Math.sqrt(days) * Math.max(0.6, vixScaler);
-  const expected = spot * (1 + dailyDrift * days);
-  const lower = expected * (1 - 1.28 * horizonVol);
-  const upper = expected * (1 + 1.28 * horizonVol);
+function weightedChoice(values, probs) {
+  const r = Math.random();
+  let cum = 0;
+  for (let i = 0; i < values.length; i++) {
+    cum += probs[i];
+    if (r <= cum) return values[i];
+  }
+  return values[values.length - 1];
+}
+
+function mapToBucket(value, binEdges) {
+  for (let i = 1; i < binEdges.length; i++) {
+    if (value <= binEdges[i]) return i;
+  }
+  return binEdges.length - 1;
+}
+
+function cumulativeLogToPrice(spot, logRet) {
+  return spot * Math.exp(logRet);
+}
+
+function formatNum(x) {
+  return Number(x).toFixed(2);
+}
+
+function buildStats(spot, terminalDist) {
+  const p15 = percentile(terminalDist, 15);
+  const p50 = percentile(terminalDist, 50);
+  const p85 = percentile(terminalDist, 85);
+
+  const lowerPrice = cumulativeLogToPrice(spot, p15);
+  const medianPrice = cumulativeLogToPrice(spot, p50);
+  const upperPrice = cumulativeLogToPrice(spot, p85);
+
+  const lowerBandPct = ((lowerPrice / spot) - 1) * 100;
+  const upperBandPct = ((upperPrice / spot) - 1) * 100;
+  const totalWidthPct = ((upperPrice - lowerPrice) / spot) * 100;
+
   return {
-    lower,
-    upper,
-    expected,
-    confidence: 'Approx. 80% interval'
+    p15,
+    p50,
+    p85,
+    lowerPrice,
+    medianPrice,
+    upperPrice,
+    lowerBandPct,
+    upperBandPct,
+    totalWidthPct
   };
 }
 
-const baseTransition = [
-  [0.70, 0.25, 0.05],
-  [0.20, 0.60, 0.20],
-  [0.05, 0.30, 0.65]
-];
+function simulateModel1(model1, nDays, nSims) {
+  const deciles = model1.return_deciles;
+  const probs = model1.return_decile_probabilities;
+  const returnsByDecile = model1.returns_by_decile;
 
-const lowVixTransition = [
-  [0.77, 0.20, 0.03],
-  [0.25, 0.55, 0.20],
-  [0.08, 0.27, 0.65]
-];
+  const terminal = [];
 
-const highVixTransition = [
-  [0.55, 0.30, 0.15],
-  [0.25, 0.45, 0.30],
-  [0.12, 0.28, 0.60]
-];
-
-const stateReturns = {
-  0: { mean: -0.006, vol: 0.012 },
-  1: { mean: 0.0003, vol: 0.007 },
-  2: { mean: 0.006, vol: 0.011 }
-};
-
-function drawNextState(currentState, transitionMatrix) {
-  const u = Math.random();
-  let cumulative = 0;
-  for (let j = 0; j < transitionMatrix[currentState].length; j++) {
-    cumulative += transitionMatrix[currentState][j];
-    if (u <= cumulative) return j;
+  for (let s = 0; s < nSims; s++) {
+    let cum = 0;
+    for (let d = 0; d < nDays; d++) {
+      const chosenDecile = weightedChoice(deciles, probs);
+      const sampledReturn = randomChoice(returnsByDecile[String(chosenDecile)]);
+      cum += sampledReturn;
+    }
+    terminal.push(cum);
   }
-  return transitionMatrix[currentState].length - 1;
+
+  return terminal;
 }
 
-function monteCarloMarkov(spot, days, simulations, transitionMatrix, startState = 1) {
-  const terminalPrices = [];
+function simulateModel2(model2, nDays, nSims, currentReturn) {
+  const returnBinEdges = model2.return_bin_edges;
+  const states = model2.transition_states;
+  const matrix = model2.transition_matrix;
+  const returnsByDecile = model2.returns_by_decile;
 
-  for (let i = 0; i < simulations; i++) {
-    let price = spot;
-    let state = startState;
+  let currentState = mapToBucket(currentReturn, returnBinEdges);
 
-    for (let d = 0; d < days; d++) {
-      state = drawNextState(state, transitionMatrix);
-      const params = stateReturns[state];
-      const dailyReturn = params.mean + params.vol * randn();
-      price *= (1 + dailyReturn);
+  const terminal = [];
+
+  for (let s = 0; s < nSims; s++) {
+    let state = currentState;
+    let cum = 0;
+
+    for (let d = 0; d < nDays; d++) {
+      const probs = matrix[state - 1];
+      const nextState = weightedChoice(states, probs);
+      const sampledReturn = randomChoice(returnsByDecile[String(nextState)]);
+      cum += sampledReturn;
+      state = nextState;
     }
 
-    terminalPrices.push(price);
+    terminal.push(cum);
   }
 
-  terminalPrices.sort((a, b) => a - b);
-
-  return {
-    lower: percentile(terminalPrices, 0.10),
-    median: percentile(terminalPrices, 0.50),
-    upper: percentile(terminalPrices, 0.90),
-    samples: terminalPrices
-  };
+  return terminal;
 }
 
-function updateResultCard(rangeId, metaId, result, label) {
-  document.getElementById(rangeId).textContent = `${formatNumber(result.lower)} - ${formatNumber(result.upper)}`;
-  document.getElementById(metaId).innerHTML = `
-    Central estimate: <strong>${formatNumber(result.expected || result.median)}</strong><br>
-    ${label}
+function simulateModel3(model3, nDays, nSims, currentReturn, currentVix) {
+  const returnBinEdges = model3.return_bin_edges;
+  const vixBinEdges = model3.vix_bin_edges;
+  const jointStates = model3.joint_states;
+  const matrix = model3.transition_matrix;
+  const returnsByJointState = model3.returns_by_joint_state;
+  const returnsByDecileFallback = model3.returns_by_decile_fallback;
+  const stateToDecile = model3.state_to_decile;
+  const minObsPerState = model3.min_obs_per_state;
+
+  const currentReturnDecile = mapToBucket(currentReturn, returnBinEdges);
+  const currentVixBucket = mapToBucket(currentVix, vixBinEdges);
+  const startState = (currentVixBucket - 1) * 10 + currentReturnDecile;
+
+  const terminal = [];
+
+  for (let s = 0; s < nSims; s++) {
+    let state = startState;
+    let cum = 0;
+
+    for (let d = 0; d < nDays; d++) {
+      const probs = matrix[state - 1];
+      const nextState = weightedChoice(jointStates, probs);
+
+      let stateReturns = returnsByJointState[String(nextState)];
+      if (!stateReturns || stateReturns.length < minObsPerState) {
+        const fallbackDecile = stateToDecile[String(nextState)];
+        stateReturns = returnsByDecileFallback[String(fallbackDecile)];
+      }
+
+      const sampledReturn = randomChoice(stateReturns);
+      cum += sampledReturn;
+      state = nextState;
+    }
+
+    terminal.push(cum);
+  }
+
+  return terminal;
+}
+
+function renderCard(cardId, title, stats) {
+  const el = document.getElementById(cardId);
+  if (!el) return;
+
+  el.innerHTML = `
+    <h3>${title}</h3>
+    <p><strong>15th percentile:</strong> ${formatNum(stats.lowerPrice)}</p>
+    <p><strong>Median:</strong> ${formatNum(stats.medianPrice)}</p>
+    <p><strong>85th percentile:</strong> ${formatNum(stats.upperPrice)}</p>
+    <p><strong>Lower band %:</strong> ${formatNum(stats.lowerBandPct)}%</p>
+    <p><strong>Upper band %:</strong> ${formatNum(stats.upperBandPct)}%</p>
+    <p><strong>Total band width %:</strong> ${formatNum(stats.totalWidthPct)}%</p>
   `;
 }
 
-function renderChart(simple, markov, vixMarkov) {
+function renderMetadata(metadata) {
+  const el = document.getElementById("metadata");
+  if (!el) return;
+
+  el.innerHTML = `
+    <p><strong>Last updated:</strong> ${metadata.last_updated}</p>
+    <p><strong>Training window:</strong> ${metadata.training_start} to ${metadata.training_end}</p>
+    <p><strong>Rows used:</strong> ${metadata.rows_used_for_modelling}</p>
+  `;
+}
+
+function renderChart(dist1, dist2, dist3) {
+  const chartEl = document.getElementById("chart");
+  if (!chartEl || typeof Plotly === "undefined") return;
+
   const traces = [
     {
-      x: ['Lower', 'Central', 'Upper'],
-      y: [simple.lower, simple.expected, simple.upper],
-      type: 'bar',
-      name: 'Simple Model'
+      x: dist1,
+      type: "histogram",
+      name: "Model 1",
+      opacity: 0.5,
+      histnorm: "probability density"
     },
     {
-      x: ['Lower', 'Central', 'Upper'],
-      y: [markov.lower, markov.median, markov.upper],
-      type: 'bar',
-      name: 'Markov + MC'
+      x: dist2,
+      type: "histogram",
+      name: "Model 2",
+      opacity: 0.5,
+      histnorm: "probability density"
     },
     {
-      x: ['Lower', 'Central', 'Upper'],
-      y: [vixMarkov.lower, vixMarkov.median, vixMarkov.upper],
-      type: 'bar',
-      name: 'VIX-Conditioned Markov + MC'
+      x: dist3,
+      type: "histogram",
+      name: "Model 3",
+      opacity: 0.5,
+      histnorm: "probability density"
     }
   ];
 
   const layout = {
-    title: 'Model Range Comparison',
-    paper_bgcolor: 'rgba(0,0,0,0)',
-    plot_bgcolor: 'rgba(0,0,0,0)',
-    font: { color: '#edf2ff' },
-    yaxis: { title: 'Predicted NIFTY Level' },
-    xaxis: { title: 'Range Point' },
-    margin: { t: 50, r: 20, b: 50, l: 70 }
+    title: "Forecast Distributions",
+    barmode: "overlay",
+    xaxis: { title: "Cumulative Log Return" },
+    yaxis: { title: "Density" }
   };
 
-  Plotly.newPlot('chart', traces, layout, { responsive: true });
+  Plotly.newPlot(chartEl, traces, layout, { responsive: true });
 }
 
-function runModels() {
-  const days = Number(document.getElementById('daysInput').value);
-  const spot = Number(document.getElementById('spotInput').value);
-  const vix = Number(document.getElementById('vixInput').value);
+async function main() {
+  const [model1, model2, model3, metadata] = await Promise.all([
+    loadJSON("data/model1.json"),
+    loadJSON("data/model2.json"),
+    loadJSON("data/model3.json"),
+    loadJSON("data/metadata.json")
+  ]);
 
-  const simple = simpleMultimodalModel(spot, days, vix);
-  const markov = monteCarloMarkov(spot, days, 4000, baseTransition, 1);
-  const transitionMatrix = vix >= 18 ? highVixTransition : lowVixTransition;
-  const vixMarkov = monteCarloMarkov(spot, days, 4000, transitionMatrix, 1);
+  renderMetadata(metadata);
 
-  updateResultCard('simpleRange', 'simpleMeta', simple, simple.confidence);
-  updateResultCard('markovRange', 'markovMeta', markov, '10th to 90th percentile from 4,000 simulations');
-  updateResultCard('vixRange', 'vixMeta', vixMarkov, `10th to 90th percentile from 4,000 simulations | VIX regime: ${vix >= 18 ? 'High' : 'Low/Normal'}`);
+  const btn = document.getElementById("runForecast");
 
-  renderChart(simple, markov, vixMarkov);
+  btn.addEventListener("click", () => {
+    const nDays = parseInt(document.getElementById("days").value, 10);
+    const currentNifty = parseFloat(document.getElementById("spot").value);
+    const previousClose = parseFloat(document.getElementById("prevClose").value);
+    const currentVix = parseFloat(document.getElementById("vix").value);
+
+    if (
+      Number.isNaN(nDays) ||
+      Number.isNaN(currentNifty) ||
+      Number.isNaN(previousClose) ||
+      Number.isNaN(currentVix) ||
+      nDays <= 0
+    ) {
+      alert("Please enter valid inputs.");
+      return;
+    }
+
+    const currentReturn = Math.log(currentNifty / previousClose);
+    const nSims = 5000;
+
+    const dist1 = simulateModel1(model1, nDays, nSims);
+    const dist2 = simulateModel2(model2, nDays, nSims, currentReturn);
+    const dist3 = simulateModel3(model3, nDays, nSims, currentReturn, currentVix);
+
+    const stats1 = buildStats(currentNifty, dist1);
+    const stats2 = buildStats(currentNifty, dist2);
+    const stats3 = buildStats(currentNifty, dist3);
+
+    renderCard("model1Card", "Model 1: Unconditional Empirical Monte Carlo", stats1);
+    renderCard("model2Card", "Model 2: Return-Decile Markov Monte Carlo", stats2);
+    renderCard("model3Card", "Model 3: Joint Return/VIX Markov Monte Carlo", stats3);
+
+    renderChart(dist1, dist2, dist3);
+  });
 }
 
-document.getElementById('runBtn').addEventListener('click', runModels);
-window.addEventListener('load', runModels);
+main().catch(err => {
+  console.error(err);
+  alert("Failed to load model files. Check your data folder and file paths.");
+});
