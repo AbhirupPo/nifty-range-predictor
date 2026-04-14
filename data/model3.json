@@ -14,11 +14,11 @@
     0.08400391
   ],
   "vix_bin_edges": [
-    -Infinity,
+   0,
     13.0175,
     15.41,
     19.8625,
-    Infinity
+    100
   ],
   "joint_states": [
     1,
