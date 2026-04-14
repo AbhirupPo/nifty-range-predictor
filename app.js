@@ -274,5 +274,5 @@ async function main() {
 
 main().catch(err => {
   console.error(err);
-  alert("Failed to load model files. Check your data folder and file paths.");
+  alert(`Failed to load model files: ${err.message}`);
 });
