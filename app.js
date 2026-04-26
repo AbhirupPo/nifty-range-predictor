@@ -1,5 +1,6 @@
 async function loadJSON(path) {
-  const res = await fetch(path);
+  const separator = path.includes("?") ? "&" : "?";
+  const res = await fetch(`${path}${separator}v=${Date.now()}`, { cache: "no-store" });
   if (!res.ok) {
     throw new Error(`Failed to load ${path}`);
   }
@@ -43,6 +44,13 @@ function cumulativeLogToPrice(spot, logRet) {
 
 function formatNum(x) {
   return Number(x).toFixed(2);
+}
+
+function formatCurrency(x) {
+  return Number(x).toLocaleString("en-IN", {
+    maximumFractionDigits: 2,
+    minimumFractionDigits: 2
+  });
 }
 
 function buildStats(spot, terminalDist) {
@@ -160,13 +168,14 @@ function simulateModel3(model3, nDays, nSims, currentReturn, currentVix) {
   return terminal;
 }
 
-function renderCard(cardId, title, stats) {
+function renderCard(cardId, title, stats, description) {
   const el = document.getElementById(cardId);
   if (!el) return;
   const chartId = `${cardId}Chart`;
 
   el.innerHTML = `
     <h3>${title}</h3>
+    <p class="model-desc">${description}</p>
     <dl class="stat-list">
       <div>
         <dt>15th percentile</dt>
@@ -210,7 +219,12 @@ function renderMetadata(metadata) {
 
 function renderModelChart(chartId, distribution, modelName, color) {
   const chartEl = document.getElementById(chartId);
-  if (!chartEl || typeof Plotly === "undefined") return;
+  if (!chartEl) return;
+  if (typeof Plotly === "undefined") {
+    chartEl.textContent = "Chart library did not load.";
+    chartEl.classList.add("empty-state");
+    return;
+  }
 
   const traces = [
     {
@@ -236,28 +250,147 @@ function renderModelChart(chartId, distribution, modelName, color) {
     bargap: 0.05,
     showlegend: false,
     xaxis: {
-      title: "Cumulative log return",
+      title: { text: "Cumulative log return", font: { color: "#aeb8d0" } },
       gridcolor: "rgba(174, 184, 208, 0.14)",
       zerolinecolor: "rgba(174, 184, 208, 0.28)",
-      tickfont: { color: "#aeb8d0" },
-      titlefont: { color: "#aeb8d0" }
+      tickfont: { color: "#aeb8d0" }
     },
     yaxis: {
-      title: "Density",
+      title: { text: "Density", font: { color: "#aeb8d0" } },
       gridcolor: "rgba(174, 184, 208, 0.14)",
       zerolinecolor: "rgba(174, 184, 208, 0.28)",
-      tickfont: { color: "#aeb8d0" },
-      titlefont: { color: "#aeb8d0" }
+      tickfont: { color: "#aeb8d0" }
     }
   };
 
-  Plotly.newPlot(chartEl, traces, layout, {
+  requestAnimationFrame(() => {
+    Plotly.newPlot(chartEl, traces, layout, {
+      displayModeBar: false,
+      responsive: true
+    });
+  });
+}
+
+function setupTabs() {
+  const buttons = document.querySelectorAll(".tab-button");
+  const panels = {
+    forecast: document.getElementById("forecastTab"),
+    pnl: document.getElementById("pnlTab")
+  };
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const tab = button.dataset.tab;
+      buttons.forEach(btn => btn.classList.toggle("active", btn === button));
+      Object.entries(panels).forEach(([key, panel]) => {
+        if (panel) panel.classList.toggle("active", key === tab);
+      });
+
+      if (tab === "pnl" && typeof Plotly !== "undefined") {
+        Plotly.Plots.resize("pnlChart");
+      }
+    });
+  });
+}
+
+function renderPnlSummary(pnlData) {
+  const el = document.getElementById("pnlSummary");
+  if (!el) return;
+  const summary = pnlData.summary || {};
+  const cards = [
+    ["Total P&L", formatCurrency(summary.total_pnl || 0)],
+    ["Trades", summary.trade_count || 0],
+    ["Win rate", `${formatNum(summary.win_rate_pct || 0)}%`],
+    ["Average P&L", formatCurrency(summary.average_pnl || 0)],
+    ["Best trade", formatCurrency(summary.best_trade || 0)],
+    ["Worst trade", formatCurrency(summary.worst_trade || 0)]
+  ];
+
+  el.innerHTML = cards.map(([label, value]) => `
+    <div>
+      <span>${label}</span>
+      <strong>${value}</strong>
+    </div>
+  `).join("");
+}
+
+function renderTradesTable(trades) {
+  const body = document.getElementById("tradesTableBody");
+  if (!body) return;
+
+  if (!trades.length) {
+    body.innerHTML = `<tr><td colspan="8">No trades loaded.</td></tr>`;
+    return;
+  }
+
+  body.innerHTML = trades.map(trade => `
+    <tr>
+      <td>${trade.date || ""}</td>
+      <td>${trade.strategy || ""}</td>
+      <td>${trade.symbol || ""}</td>
+      <td>${trade.side || ""}</td>
+      <td>${trade.quantity == null ? "" : trade.quantity}</td>
+      <td>${trade.entry_price == null ? "" : trade.entry_price}</td>
+      <td>${trade.exit_price == null ? "" : trade.exit_price}</td>
+      <td>${formatCurrency(trade.pnl || 0)}</td>
+    </tr>
+  `).join("");
+}
+
+function renderPnlChart(equityCurve) {
+  const chartEl = document.getElementById("pnlChart");
+  if (!chartEl) return;
+
+  if (!equityCurve.length) {
+    chartEl.textContent = "Upload trades and regenerate P&L data to show the equity curve.";
+    chartEl.classList.add("empty-state");
+    return;
+  }
+
+  if (typeof Plotly === "undefined") {
+    chartEl.textContent = "Chart library did not load.";
+    chartEl.classList.add("empty-state");
+    return;
+  }
+
+  Plotly.newPlot(chartEl, [{
+    x: equityCurve.map(row => row.date),
+    y: equityCurve.map(row => row.cumulative_pnl),
+    type: "scatter",
+    mode: "lines+markers",
+    line: { color: "#5ee0b5", width: 3 },
+    marker: { color: "#5ee0b5", size: 6 },
+    name: "Cumulative P&L"
+  }], {
+    margin: { t: 12, r: 12, b: 44, l: 56 },
+    paper_bgcolor: "rgba(0, 0, 0, 0)",
+    plot_bgcolor: "rgba(15, 21, 36, 0.55)",
+    xaxis: {
+      title: { text: "Date", font: { color: "#aeb8d0" } },
+      gridcolor: "rgba(174, 184, 208, 0.14)",
+      tickfont: { color: "#aeb8d0" }
+    },
+    yaxis: {
+      title: { text: "Cumulative P&L", font: { color: "#aeb8d0" } },
+      gridcolor: "rgba(174, 184, 208, 0.14)",
+      tickfont: { color: "#aeb8d0" }
+    }
+  }, {
     displayModeBar: false,
     responsive: true
   });
 }
 
+async function loadPnlData() {
+  const pnlData = await loadJSON("data/pnl.json");
+  renderPnlSummary(pnlData);
+  renderTradesTable(pnlData.trades || []);
+  renderPnlChart(pnlData.equity_curve || []);
+}
+
 async function main() {
+  setupTabs();
+
   const [model1, model2, model3, metadata] = await Promise.all([
     loadJSON("data/model1.json"),
     loadJSON("data/model2.json"),
@@ -266,6 +399,11 @@ async function main() {
   ]);
 
   renderMetadata(metadata);
+  loadPnlData().catch(err => {
+    console.error(err);
+    const el = document.getElementById("pnlSummary");
+    if (el) el.textContent = "Failed to load P&L data.";
+  });
 
   const btn = document.getElementById("runForecast");
 
@@ -297,9 +435,24 @@ async function main() {
     const stats2 = buildStats(currentNifty, dist2);
     const stats3 = buildStats(currentNifty, dist3);
 
-    renderCard("model1Card", "Model 1: Unconditional Empirical Monte Carlo", stats1);
-    renderCard("model2Card", "Model 2: Return-Decile Markov Monte Carlo", stats2);
-    renderCard("model3Card", "Model 3: Joint Return/VIX Markov Monte Carlo", stats3);
+    renderCard(
+      "model1Card",
+      "Model 1: Unconditional Empirical Monte Carlo",
+      stats1,
+      "Samples from the empirical distribution of return deciles without conditioning on the current state."
+    );
+    renderCard(
+      "model2Card",
+      "Model 2: Return-Decile Markov Monte Carlo",
+      stats2,
+      "Uses the current return decile and a return-decile transition matrix to simulate future states."
+    );
+    renderCard(
+      "model3Card",
+      "Model 3: Joint Return/VIX Markov Monte Carlo",
+      stats3,
+      "Uses the current return decile and India VIX bucket jointly through a 40-state transition framework."
+    );
 
     renderModelChart("model1CardChart", dist1, "Model 1", "#7aa2ff");
     renderModelChart("model2CardChart", dist2, "Model 2", "#5ee0b5");

@@ -52,3 +52,7 @@ git add data/
 git commit -m "Update model data"
 git push
 ```
+
+P&L data for the dashboard is also generated outside this public repo. The site
+reads `data/pnl.json`; update that file from the private Excel workflow before
+committing if you want the P&L tab to refresh.

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NIFTY Range Predictor</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20260426-2" />
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
 <body>
@@ -17,69 +17,112 @@
       </p>
     </header>
 
-    <section class="controls card">
-      <div class="input-group">
-        <label for="days">Trading days</label>
-        <input id="days" type="number" min="1" max="60" value="5" />
-      </div>
+    <nav class="tabs" aria-label="Dashboard views">
+      <button class="tab-button active" type="button" data-tab="forecast">Forecast</button>
+      <button class="tab-button" type="button" data-tab="pnl">P&amp;L</button>
+    </nav>
 
-      <div class="input-group">
-        <label for="spot">Current NIFTY level</label>
-        <input id="spot" type="number" min="1000" step="0.01" value="22500" />
-      </div>
+    <main id="forecastTab" class="tab-panel active">
+      <section class="controls card">
+        <div class="input-group">
+          <label for="days">Trading days</label>
+          <input id="days" type="number" min="1" max="60" value="5" />
+        </div>
 
-      <div class="input-group">
-        <label for="prevClose">Previous close</label>
-        <input id="prevClose" type="number" min="1000" step="0.01" value="22450" />
-      </div>
+        <div class="input-group">
+          <label for="spot">Current NIFTY level</label>
+          <input id="spot" type="number" min="1000" step="0.01" value="22500" />
+        </div>
 
-      <div class="input-group">
-        <label for="vix">Current India VIX</label>
-        <input id="vix" type="number" min="1" step="0.01" value="15" />
-      </div>
+        <div class="input-group">
+          <label for="prevClose">Previous close</label>
+          <input id="prevClose" type="number" min="1000" step="0.01" value="22450" />
+        </div>
 
-      <button id="runForecast">Generate Forecast</button>
-    </section>
+        <div class="input-group">
+          <label for="vix">Current India VIX</label>
+          <input id="vix" type="number" min="1" step="0.01" value="15" />
+        </div>
 
-    <section class="card">
-      <h2>Model Metadata</h2>
-      <div id="metadata">Loading model metadata...</div>
-    </section>
+        <button id="runForecast">Generate Forecast</button>
+      </section>
 
-    <section class="results-grid">
-      <div class="card result-card" id="model1Card">
-        <h2>Model 1: Unconditional Empirical Monte Carlo</h2>
-        <p class="model-desc">
-          Samples from the empirical distribution of return deciles without conditioning on the current state.
-        </p>
-      </div>
+      <section class="card">
+        <h2>Model Metadata</h2>
+        <div id="metadata">Loading model metadata...</div>
+      </section>
 
-      <div class="card result-card" id="model2Card">
-        <h2>Model 2: Return-Decile Markov Monte Carlo</h2>
-        <p class="model-desc">
-          Uses the current return decile and a return-decile transition matrix to simulate future states.
-        </p>
-      </div>
+      <section class="results-grid">
+        <div class="card result-card" id="model1Card">
+          <h2>Model 1: Unconditional Empirical Monte Carlo</h2>
+          <p class="model-desc">
+            Samples from the empirical distribution of return deciles without conditioning on the current state.
+          </p>
+          <div class="model-chart empty-state">Generate a forecast to plot this model.</div>
+        </div>
 
-      <div class="card result-card" id="model3Card">
-        <h2>Model 3: Joint Return/VIX Markov Monte Carlo</h2>
-        <p class="model-desc">
-          Uses the current return decile and India VIX bucket jointly through a 40-state transition framework.
-        </p>
-      </div>
-    </section>
+        <div class="card result-card" id="model2Card">
+          <h2>Model 2: Return-Decile Markov Monte Carlo</h2>
+          <p class="model-desc">
+            Uses the current return decile and a return-decile transition matrix to simulate future states.
+          </p>
+          <div class="model-chart empty-state">Generate a forecast to plot this model.</div>
+        </div>
 
-    <section class="card notes">
-      <h2>How this works</h2>
-      <ol>
-        <li>Enter trading days, current NIFTY, previous close, and current India VIX.</li>
-        <li>The site computes the current daily log return from current NIFTY and previous close.</li>
-        <li>Each model runs Monte Carlo simulation using the latest monthly-updated JSON model objects.</li>
-        <li>The output shows the 15th, 50th, and 85th percentile forecast range and band width percentages.</li>
-      </ol>
-    </section>
+        <div class="card result-card" id="model3Card">
+          <h2>Model 3: Joint Return/VIX Markov Monte Carlo</h2>
+          <p class="model-desc">
+            Uses the current return decile and India VIX bucket jointly through a 40-state transition framework.
+          </p>
+          <div class="model-chart empty-state">Generate a forecast to plot this model.</div>
+        </div>
+      </section>
+
+      <section class="card notes">
+        <h2>How this works</h2>
+        <ol>
+          <li>Enter trading days, current NIFTY, previous close, and current India VIX.</li>
+          <li>The site computes the current daily log return from current NIFTY and previous close.</li>
+          <li>Each model runs Monte Carlo simulation using the latest monthly-updated JSON model objects.</li>
+          <li>The output shows the 15th, 50th, and 85th percentile forecast range and band width percentages.</li>
+        </ol>
+      </section>
+    </main>
+
+    <main id="pnlTab" class="tab-panel">
+      <section class="card">
+        <h2>Strategy P&amp;L</h2>
+        <div id="pnlSummary" class="pnl-summary">Loading P&amp;L data...</div>
+        <div id="pnlChart" class="pnl-chart"></div>
+      </section>
+
+      <section class="card">
+        <h2>Trades</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Strategy</th>
+                <th>Symbol</th>
+                <th>Side</th>
+                <th>Quantity</th>
+                <th>Entry</th>
+                <th>Exit</th>
+                <th>P&amp;L</th>
+              </tr>
+            </thead>
+            <tbody id="tradesTableBody">
+              <tr>
+                <td colspan="8">No trades loaded.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20260426-2"></script>
 </body>
 </html>
