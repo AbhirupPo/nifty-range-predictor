@@ -1,0 +1,21 @@
+.env
+*.env
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Keep secrets and private scripts out of the public GitHub Pages repo.
+secrets/
+private/
+credentials.json
+*_token*
+*token*
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
