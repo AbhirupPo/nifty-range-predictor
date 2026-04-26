@@ -163,15 +163,37 @@ function simulateModel3(model3, nDays, nSims, currentReturn, currentVix) {
 function renderCard(cardId, title, stats) {
   const el = document.getElementById(cardId);
   if (!el) return;
+  const chartId = `${cardId}Chart`;
 
   el.innerHTML = `
     <h3>${title}</h3>
-    <p><strong>15th percentile:</strong> ${formatNum(stats.lowerPrice)}</p>
-    <p><strong>Median:</strong> ${formatNum(stats.medianPrice)}</p>
-    <p><strong>85th percentile:</strong> ${formatNum(stats.upperPrice)}</p>
-    <p><strong>Lower band %:</strong> ${formatNum(stats.lowerBandPct)}%</p>
-    <p><strong>Upper band %:</strong> ${formatNum(stats.upperBandPct)}%</p>
-    <p><strong>Total band width %:</strong> ${formatNum(stats.totalWidthPct)}%</p>
+    <dl class="stat-list">
+      <div>
+        <dt>15th percentile</dt>
+        <dd>${formatNum(stats.lowerPrice)}</dd>
+      </div>
+      <div>
+        <dt>Median</dt>
+        <dd>${formatNum(stats.medianPrice)}</dd>
+      </div>
+      <div>
+        <dt>85th percentile</dt>
+        <dd>${formatNum(stats.upperPrice)}</dd>
+      </div>
+      <div>
+        <dt>Lower band %</dt>
+        <dd>${formatNum(stats.lowerBandPct)}%</dd>
+      </div>
+      <div>
+        <dt>Upper band %</dt>
+        <dd>${formatNum(stats.upperBandPct)}%</dd>
+      </div>
+      <div>
+        <dt>Total band width %</dt>
+        <dd>${formatNum(stats.totalWidthPct)}%</dd>
+      </div>
+    </dl>
+    <div class="model-chart" id="${chartId}"></div>
   `;
 }
 
@@ -186,42 +208,53 @@ function renderMetadata(metadata) {
   `;
 }
 
-function renderChart(dist1, dist2, dist3) {
-  const chartEl = document.getElementById("chart");
+function renderModelChart(chartId, distribution, modelName, color) {
+  const chartEl = document.getElementById(chartId);
   if (!chartEl || typeof Plotly === "undefined") return;
 
   const traces = [
     {
-      x: dist1,
+      x: distribution,
       type: "histogram",
-      name: "Model 1",
-      opacity: 0.5,
-      histnorm: "probability density"
-    },
-    {
-      x: dist2,
-      type: "histogram",
-      name: "Model 2",
-      opacity: 0.5,
-      histnorm: "probability density"
-    },
-    {
-      x: dist3,
-      type: "histogram",
-      name: "Model 3",
-      opacity: 0.5,
-      histnorm: "probability density"
+      name: modelName,
+      histnorm: "probability density",
+      marker: {
+        color,
+        line: {
+          color: "rgba(237, 242, 255, 0.35)",
+          width: 1
+        }
+      },
+      opacity: 0.85
     }
   ];
 
   const layout = {
-    title: "Forecast Distributions",
-    barmode: "overlay",
-    xaxis: { title: "Cumulative Log Return" },
-    yaxis: { title: "Density" }
+    margin: { t: 12, r: 8, b: 42, l: 42 },
+    paper_bgcolor: "rgba(0, 0, 0, 0)",
+    plot_bgcolor: "rgba(15, 21, 36, 0.55)",
+    bargap: 0.05,
+    showlegend: false,
+    xaxis: {
+      title: "Cumulative log return",
+      gridcolor: "rgba(174, 184, 208, 0.14)",
+      zerolinecolor: "rgba(174, 184, 208, 0.28)",
+      tickfont: { color: "#aeb8d0" },
+      titlefont: { color: "#aeb8d0" }
+    },
+    yaxis: {
+      title: "Density",
+      gridcolor: "rgba(174, 184, 208, 0.14)",
+      zerolinecolor: "rgba(174, 184, 208, 0.28)",
+      tickfont: { color: "#aeb8d0" },
+      titlefont: { color: "#aeb8d0" }
+    }
   };
 
-  Plotly.newPlot(chartEl, traces, layout, { responsive: true });
+  Plotly.newPlot(chartEl, traces, layout, {
+    displayModeBar: false,
+    responsive: true
+  });
 }
 
 async function main() {
@@ -268,7 +301,9 @@ async function main() {
     renderCard("model2Card", "Model 2: Return-Decile Markov Monte Carlo", stats2);
     renderCard("model3Card", "Model 3: Joint Return/VIX Markov Monte Carlo", stats3);
 
-    renderChart(dist1, dist2, dist3);
+    renderModelChart("model1CardChart", dist1, "Model 1", "#7aa2ff");
+    renderModelChart("model2CardChart", dist2, "Model 2", "#5ee0b5");
+    renderModelChart("model3CardChart", dist3, "Model 3", "#f6c85f");
   });
 }
 
