@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-04-27",
+  "last_updated": "2026-04-29",
   "summary": {
-    "total_pnl": 2759.25,
+    "total_pnl": 6844.5,
     "trade_count": 2,
     "win_rate_pct": 100.0,
-    "average_pnl": 1379.62,
-    "best_trade": 1888.25,
-    "worst_trade": 871.0
+    "average_pnl": 3422.25,
+    "best_trade": 4101.5,
+    "worst_trade": 2743.0
   },
   "equity_curve": [
     {
       "date": "2026-04-27",
-      "cumulative_pnl": 1888.25
+      "cumulative_pnl": 4101.5
     },
     {
       "date": "2026-04-27",
-      "cumulative_pnl": 2759.25
+      "cumulative_pnl": 6844.5
     }
   ],
   "trades": [
@@ -26,8 +26,8 @@
       "side": "SELL",
       "quantity": 65.0,
       "entry_price": 104.0,
-      "exit_price": 74.95,
-      "pnl": 1888.25
+      "exit_price": 40.9,
+      "pnl": 4101.5
     },
     {
       "date": "2026-04-27",
@@ -36,8 +36,8 @@
       "side": "SELL",
       "quantity": 65.0,
       "entry_price": 73.0,
-      "exit_price": 59.6,
-      "pnl": 871.0
+      "exit_price": 30.8,
+      "pnl": 2743.0
     }
   ]
 }
