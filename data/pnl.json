@@ -1,21 +1,29 @@
 {
-  "last_updated": "2026-04-29",
+  "last_updated": "2026-05-05",
   "summary": {
-    "total_pnl": 6844.5,
-    "trade_count": 2,
+    "total_pnl": 14348.75,
+    "trade_count": 4,
     "win_rate_pct": 100.0,
-    "average_pnl": 3422.25,
-    "best_trade": 4101.5,
-    "worst_trade": 2743.0
+    "average_pnl": 3587.19,
+    "best_trade": 6678.75,
+    "worst_trade": 461.5
   },
   "equity_curve": [
     {
       "date": "2026-04-27",
-      "cumulative_pnl": 4101.5
+      "cumulative_pnl": 6678.75
     },
     {
       "date": "2026-04-27",
-      "cumulative_pnl": 6844.5
+      "cumulative_pnl": 11375.0
+    },
+    {
+      "date": "2026-05-05",
+      "cumulative_pnl": 13887.25
+    },
+    {
+      "date": "2026-05-05",
+      "cumulative_pnl": 14348.75
     }
   ],
   "trades": [
@@ -26,8 +34,8 @@
       "side": "SELL",
       "quantity": 65.0,
       "entry_price": 104.0,
-      "exit_price": 40.9,
-      "pnl": 4101.5
+      "exit_price": 1.25,
+      "pnl": 6678.75
     },
     {
       "date": "2026-04-27",
@@ -36,8 +44,28 @@
       "side": "SELL",
       "quantity": 65.0,
       "entry_price": 73.0,
-      "exit_price": 30.8,
-      "pnl": 2743.0
+      "exit_price": 0.75,
+      "pnl": 4696.25
+    },
+    {
+      "date": "2026-05-05",
+      "strategy": "Strategy 3",
+      "symbol": "NIFTY2651923500PE",
+      "side": "SELL",
+      "quantity": 65.0,
+      "entry_price": 143.3,
+      "exit_price": 104.65,
+      "pnl": 2512.25
+    },
+    {
+      "date": "2026-05-05",
+      "strategy": "Strategy 3",
+      "symbol": "NIFTY2651924500CE",
+      "side": "SELL",
+      "quantity": 65.0,
+      "entry_price": 150.1,
+      "exit_price": 143.0,
+      "pnl": 461.5
     }
   ]
 }
