@@ -299,6 +299,8 @@ function renderPnlSummary(pnlData) {
   const summary = pnlData.summary || {};
   const cards = [
     ["Total P&L", formatCurrency(summary.total_pnl || 0)],
+    ["Total return", `${formatNum(summary.total_return_pct || 0)}%`],
+    ["Capital base", formatCurrency(summary.capital_base || 0)],
     ["Trades", summary.trade_count || 0],
     ["Win rate", `${formatNum(summary.win_rate_pct || 0)}%`],
     ["Average P&L", formatCurrency(summary.average_pnl || 0)],
