@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-06-30",
+  "last_updated": "2026-07-01",
   "source": "range_strangle_live_order_log",
   "summary": {
-    "total_pnl": 315.25,
-    "total_return_pct": 0.16,
+    "total_pnl": 295.75,
+    "total_return_pct": 0.15,
     "capital_base": 200000.0,
-    "trade_count": 24,
-    "win_rate_pct": 58.33,
-    "average_pnl": 13.14,
+    "trade_count": 27,
+    "win_rate_pct": 55.56,
+    "average_pnl": 10.95,
     "best_trade": 529.75,
     "worst_trade": -848.25
   },
@@ -25,6 +25,13 @@
       "open_mtm": -2814.5,
       "cumulative_pnl": 315.25,
       "return_pct": 0.16
+    },
+    {
+      "date": "2026-07-01",
+      "cash": 3152.5,
+      "open_mtm": -2856.75,
+      "cumulative_pnl": 295.75,
+      "return_pct": 0.15
     }
   ],
   "trades": [
@@ -363,6 +370,48 @@
       "exit_time": "2026-06-30T15:00:05.817913+05:30",
       "entry_order_no": "260630000484593",
       "exit_order_no": "260630000544899"
+    },
+    {
+      "date": "2026-07-01",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723400PE",
+      "side": "SELL",
+      "quantity": 65,
+      "entry_price": 16.1,
+      "exit_price": 18.1,
+      "pnl": -130.0,
+      "entry_time": "2026-06-30T15:00:07.776314+05:30",
+      "exit_time": "2026-07-01T09:45:04.217531+05:30",
+      "entry_order_no": "260630000545133",
+      "exit_order_no": "260701000045572"
+    },
+    {
+      "date": "2026-07-01",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724450CE",
+      "side": "SELL",
+      "quantity": 65,
+      "entry_price": 27.2,
+      "exit_price": 23.55,
+      "pnl": 237.25,
+      "entry_time": "2026-06-30T14:30:11.557845+05:30",
+      "exit_time": "2026-07-01T09:45:05.986870+05:30",
+      "entry_order_no": "260630000484716",
+      "exit_order_no": "260701000045609"
+    },
+    {
+      "date": "2026-07-01",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724500CE",
+      "side": "SELL",
+      "quantity": 65,
+      "entry_price": 18.8,
+      "exit_price": 20.75,
+      "pnl": -126.75,
+      "entry_time": "2026-07-01T09:45:09.675992+05:30",
+      "exit_time": "2026-07-01T10:00:03.892175+05:30",
+      "entry_order_no": "260701000045680",
+      "exit_order_no": "260701000062310"
     }
   ],
   "pnl_start_at": "2026-06-29T09:15:10.211140+05:30",
