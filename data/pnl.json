@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16",
+  "last_updated": "2026-07-17",
   "source": "range_strangle_live_order_log",
   "summary": {
     "total_pnl": -7754.5,
@@ -79,6 +79,13 @@
       "date": "2026-07-13",
       "cash": 3149.25,
       "open_mtm": -10903.75,
+      "cumulative_pnl": -7754.5,
+      "return_pct": -3.88
+    },
+    {
+      "date": "2026-07-17",
+      "cash": 7358.0,
+      "open_mtm": -15112.5,
       "cumulative_pnl": -7754.5,
       "return_pct": -3.88
     }
