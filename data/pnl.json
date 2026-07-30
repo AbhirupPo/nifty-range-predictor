@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-07-29",
+  "last_updated": "2026-07-30",
   "source": "combined_live_order_logs",
   "summary": {
-    "total_pnl": -3441.75,
-    "total_return_pct": -0.86,
+    "total_pnl": -5024.5,
+    "total_return_pct": -1.26,
     "capital_base": 400000.0,
-    "trade_count": 249,
-    "win_rate_pct": 51.0,
-    "average_pnl": -38.77,
+    "trade_count": 264,
+    "win_rate_pct": 50.76,
+    "average_pnl": -45.44,
     "best_trade": 2554.5,
     "worst_trade": -5362.5
   },
   "strategies": {
     "range_strangle": {
-      "total_pnl": 7835.75,
-      "total_return_pct": 3.92,
+      "total_pnl": 8596.25,
+      "total_return_pct": 4.3,
       "capital_base": 200000.0,
       "trade_count": 82,
       "win_rate_pct": 53.66,
@@ -23,12 +23,12 @@
       "worst_trade": -5362.5
     },
     "atm_imbalance": {
-      "total_pnl": -11277.5,
-      "total_return_pct": -5.64,
+      "total_pnl": -13620.75,
+      "total_return_pct": -6.81,
       "capital_base": 200000.0,
-      "trade_count": 167,
-      "win_rate_pct": 49.7,
-      "average_pnl": -67.53,
+      "trade_count": 182,
+      "win_rate_pct": 49.45,
+      "average_pnl": -74.84,
       "best_trade": 1134.25,
       "worst_trade": -4007.25
     }
@@ -194,6 +194,13 @@
       "open_mtm": -1667.25,
       "cumulative_pnl": -3441.75,
       "return_pct": -0.86
+    },
+    {
+      "date": "2026-07-30",
+      "cash": -4117.75,
+      "open_mtm": -906.75,
+      "cumulative_pnl": -5024.5,
+      "return_pct": -1.26
     }
   ],
   "trades": [
@@ -3682,6 +3689,216 @@
       "exit_time": "2026-07-29T15:26:00.865417+05:30",
       "entry_order_no": "260729000244722",
       "exit_order_no": "260729000245542"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424300PE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 140.5,
+      "exit_price": 152.7,
+      "pnl": 793.0,
+      "entry_time": "2026-07-30T09:30:02.007479+05:30",
+      "exit_time": "2026-07-30T10:25:03.141323+05:30",
+      "entry_order_no": "260730000043052",
+      "exit_order_no": "260730000118141"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250CE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 104.1,
+      "exit_price": 93.4,
+      "pnl": -695.5,
+      "entry_time": "2026-07-30T10:25:05.683324+05:30",
+      "exit_time": "2026-07-30T10:30:03.376621+05:30",
+      "entry_order_no": "260730000118168",
+      "exit_order_no": "260730000123936"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250PE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 138.7,
+      "exit_price": 132.4,
+      "pnl": -409.5,
+      "entry_time": "2026-07-30T10:30:05.962231+05:30",
+      "exit_time": "2026-07-30T10:40:03.170600+05:30",
+      "entry_order_no": "260730000124115",
+      "exit_order_no": "260730000136397"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250CE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 96.3,
+      "exit_price": 105.5,
+      "pnl": 598.0,
+      "entry_time": "2026-07-30T10:40:05.824261+05:30",
+      "exit_time": "2026-07-30T10:45:03.119362+05:30",
+      "entry_order_no": "260730000136440",
+      "exit_order_no": "260730000140952"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250PE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 119.75,
+      "exit_price": 119.05,
+      "pnl": -45.5,
+      "entry_time": "2026-07-30T10:45:05.614802+05:30",
+      "exit_time": "2026-07-30T10:50:03.275488+05:30",
+      "entry_order_no": "260730000141018",
+      "exit_order_no": "260730000145266"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250CE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 107.05,
+      "exit_price": 107.2,
+      "pnl": 9.75,
+      "entry_time": "2026-07-30T10:50:05.814725+05:30",
+      "exit_time": "2026-07-30T10:55:03.239492+05:30",
+      "entry_order_no": "260730000145288",
+      "exit_order_no": "260730000151445"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250PE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 118.5,
+      "exit_price": 120.65,
+      "pnl": 139.75,
+      "entry_time": "2026-07-30T10:55:05.800205+05:30",
+      "exit_time": "2026-07-30T11:10:03.165958+05:30",
+      "entry_order_no": "260730000151469",
+      "exit_order_no": "260730000162255"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250CE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 104.3,
+      "exit_price": 108.55,
+      "pnl": 276.25,
+      "entry_time": "2026-07-30T11:10:05.776683+05:30",
+      "exit_time": "2026-07-30T11:15:03.056626+05:30",
+      "entry_order_no": "260730000162284",
+      "exit_order_no": "260730000166726"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250PE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 116.1,
+      "exit_price": 94.65,
+      "pnl": -1394.25,
+      "entry_time": "2026-07-30T11:15:05.609456+05:30",
+      "exit_time": "2026-07-30T13:00:03.316178+05:30",
+      "entry_order_no": "260730000166764",
+      "exit_order_no": "260730000272295"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424300CE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 106.1,
+      "exit_price": 89.8,
+      "pnl": -1059.5,
+      "entry_time": "2026-07-30T13:00:05.850038+05:30",
+      "exit_time": "2026-07-30T13:20:03.056166+05:30",
+      "entry_order_no": "260730000272377",
+      "exit_order_no": "260730000301375"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250PE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 107.2,
+      "exit_price": 110.35,
+      "pnl": 204.75,
+      "entry_time": "2026-07-30T13:20:05.785776+05:30",
+      "exit_time": "2026-07-30T14:20:03.313605+05:30",
+      "entry_order_no": "260730000301415",
+      "exit_order_no": "260730000370518"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250CE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 109.55,
+      "exit_price": 102.0,
+      "pnl": -490.75,
+      "entry_time": "2026-07-30T14:20:05.992354+05:30",
+      "exit_time": "2026-07-30T14:25:03.149888+05:30",
+      "entry_order_no": "260730000370569",
+      "exit_order_no": "260730000382417"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250PE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 116.9,
+      "exit_price": 113.4,
+      "pnl": -227.5,
+      "entry_time": "2026-07-30T14:25:05.838591+05:30",
+      "exit_time": "2026-07-30T14:35:03.215083+05:30",
+      "entry_order_no": "260730000382469",
+      "exit_order_no": "260730000399783"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250CE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 104.45,
+      "exit_price": 114.2,
+      "pnl": 633.75,
+      "entry_time": "2026-07-30T14:35:05.836604+05:30",
+      "exit_time": "2026-07-30T14:40:03.268650+05:30",
+      "entry_order_no": "260730000399945",
+      "exit_order_no": "260730000408681"
+    },
+    {
+      "date": "2026-07-30",
+      "strategy": "ATM Imbalance",
+      "symbol": "NIFTY2680424250PE",
+      "side": "LONG_OPTION",
+      "quantity": 65,
+      "entry_price": 103.5,
+      "exit_price": 93.1,
+      "pnl": -676.0,
+      "entry_time": "2026-07-30T14:40:05.838879+05:30",
+      "exit_time": "2026-07-30T15:26:00.929603+05:30",
+      "entry_order_no": "260730000408798",
+      "exit_order_no": "260730000524600"
     }
   ],
   "open_positions": [
@@ -3717,19 +3934,19 @@
       "strategy": "Range Strangle",
       "symbol": "NIFTY2680423750PE",
       "quantity": -65,
-      "latest_price": 19.3,
-      "open_mtm": -1254.5
+      "latest_price": 9.1,
+      "open_mtm": -591.5
     },
     {
       "strategy": "Range Strangle",
       "symbol": "NIFTY2680424750CE",
       "quantity": -65,
-      "latest_price": 6.15,
-      "open_mtm": -399.75
+      "latest_price": 4.65,
+      "open_mtm": -302.25
     }
   ],
   "audit": {
-    "successful_order_count": 504,
+    "successful_order_count": 534,
     "failed_order_count_by_strategy": {
       "Range Strangle": 0,
       "ATM Imbalance": 10
