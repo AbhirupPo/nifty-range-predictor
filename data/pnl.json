@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-08-10",
+  "last_updated": "2026-08-12",
   "source": "combined_live_order_logs",
   "summary": {
-    "total_pnl": -3974.75,
-    "total_return_pct": -0.99,
+    "total_pnl": -3578.25,
+    "total_return_pct": -0.89,
     "capital_base": 400000.0,
-    "trade_count": 338,
-    "win_rate_pct": 50.3,
-    "average_pnl": -31.41,
+    "trade_count": 344,
+    "win_rate_pct": 50.87,
+    "average_pnl": -27.51,
     "best_trade": 2554.5,
     "worst_trade": -5362.5
   },
   "strategies": {
     "range_strangle": {
-      "total_pnl": 11066.25,
-      "total_return_pct": 5.53,
+      "total_pnl": 11462.75,
+      "total_return_pct": 5.73,
       "capital_base": 200000.0,
-      "trade_count": 119,
-      "win_rate_pct": 52.1,
-      "average_pnl": 37.17,
+      "trade_count": 125,
+      "win_rate_pct": 53.6,
+      "average_pnl": 44.62,
       "best_trade": 2554.5,
       "worst_trade": -5362.5
     },
@@ -250,6 +250,20 @@
       "open_mtm": -1547.0,
       "cumulative_pnl": -3974.75,
       "return_pct": -0.99
+    },
+    {
+      "date": "2026-08-11",
+      "cash": -2122.25,
+      "open_mtm": -1495.0,
+      "cumulative_pnl": -3617.25,
+      "return_pct": -0.9
+    },
+    {
+      "date": "2026-08-12",
+      "cash": -1842.75,
+      "open_mtm": -1735.5,
+      "cumulative_pnl": -3578.25,
+      "return_pct": -0.89
     }
   ],
   "trades": [
@@ -4984,6 +4998,90 @@
       "exit_time": "2026-08-10T10:30:06.861034+05:30",
       "entry_order_no": "260810000072700",
       "exit_order_no": "260810000089192"
+    },
+    {
+      "date": "2026-08-11",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2681824000PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 28.15,
+      "exit_price": 20.9,
+      "pnl": 471.25,
+      "entry_time": "2026-08-10T09:45:08.749267+05:30",
+      "exit_time": "2026-08-11T10:15:05.192367+05:30",
+      "entry_order_no": "260810000050165",
+      "exit_order_no": "260811000094619"
+    },
+    {
+      "date": "2026-08-11",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2681825300CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 10.25,
+      "exit_price": 3.8,
+      "pnl": 419.25,
+      "entry_time": "2026-08-10T10:30:08.704191+05:30",
+      "exit_time": "2026-08-11T10:15:06.889014+05:30",
+      "entry_order_no": "260810000089233",
+      "exit_order_no": "260811000094654"
+    },
+    {
+      "date": "2026-08-12",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2681823950PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 16.5,
+      "exit_price": 16.4,
+      "pnl": 6.5,
+      "entry_time": "2026-08-11T10:15:08.739017+05:30",
+      "exit_time": "2026-08-12T10:00:06.761379+05:30",
+      "entry_order_no": "260811000094687",
+      "exit_order_no": "260812000062965"
+    },
+    {
+      "date": "2026-08-12",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2681825050CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 12.9,
+      "exit_price": 5.7,
+      "pnl": 468.0,
+      "entry_time": "2026-08-11T10:15:10.579456+05:30",
+      "exit_time": "2026-08-12T10:00:08.413778+05:30",
+      "entry_order_no": "260811000094733",
+      "exit_order_no": "260812000063016"
+    },
+    {
+      "date": "2026-08-12",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2681823900PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 12.95,
+      "exit_price": 19.1,
+      "pnl": -399.75,
+      "entry_time": "2026-08-12T10:00:10.271146+05:30",
+      "exit_time": "2026-08-12T11:30:06.568149+05:30",
+      "entry_order_no": "260812000063083",
+      "exit_order_no": "260812000127166"
+    },
+    {
+      "date": "2026-08-12",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2681824900CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 11.6,
+      "exit_price": 8.7,
+      "pnl": 188.5,
+      "entry_time": "2026-08-12T10:00:12.147039+05:30",
+      "exit_time": "2026-08-12T11:30:08.219257+05:30",
+      "entry_order_no": "260812000063150",
+      "exit_order_no": "260812000127194"
     }
   ],
   "open_positions": [
@@ -5017,21 +5115,21 @@
     },
     {
       "strategy": "Range Strangle",
-      "symbol": "NIFTY2681824000PE",
+      "symbol": "NIFTY2681823850PE",
       "quantity": -65,
-      "latest_price": 16.6,
-      "open_mtm": -1079.0
+      "latest_price": 7.1,
+      "open_mtm": -461.5
     },
     {
       "strategy": "Range Strangle",
-      "symbol": "NIFTY2681825300CE",
+      "symbol": "NIFTY2681824800CE",
       "quantity": -65,
-      "latest_price": 7.0,
-      "open_mtm": -455.0
+      "latest_price": 19.4,
+      "open_mtm": -1261.0
     }
   ],
   "audit": {
-    "successful_order_count": 682,
+    "successful_order_count": 694,
     "failed_order_count_by_strategy": {
       "Range Strangle": 0,
       "ATM Imbalance": 10
