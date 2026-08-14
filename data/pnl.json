@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-13",
+  "last_updated": "2026-08-14",
   "source": "combined_live_order_logs",
   "summary": {
-    "total_pnl": -2665.0,
-    "total_return_pct": -0.67,
+    "total_pnl": -2382.25,
+    "total_return_pct": -0.6,
     "capital_base": 400000.0,
     "trade_count": 344,
     "win_rate_pct": 50.87,
@@ -13,8 +13,8 @@
   },
   "strategies": {
     "range_strangle": {
-      "total_pnl": 12376.0,
-      "total_return_pct": 6.19,
+      "total_pnl": 12658.75,
+      "total_return_pct": 6.33,
       "capital_base": 200000.0,
       "trade_count": 125,
       "win_rate_pct": 53.6,
@@ -271,6 +271,13 @@
       "open_mtm": -822.25,
       "cumulative_pnl": -2665.0,
       "return_pct": -0.67
+    },
+    {
+      "date": "2026-08-14",
+      "cash": -1842.75,
+      "open_mtm": -539.5,
+      "cumulative_pnl": -2382.25,
+      "return_pct": -0.6
     }
   ],
   "trades": [
@@ -5124,15 +5131,15 @@
       "strategy": "Range Strangle",
       "symbol": "NIFTY2681823850PE",
       "quantity": -65,
-      "latest_price": 3.3,
-      "open_mtm": -214.5
+      "latest_price": 3.5,
+      "open_mtm": -227.5
     },
     {
       "strategy": "Range Strangle",
       "symbol": "NIFTY2681824800CE",
       "quantity": -65,
-      "latest_price": 9.15,
-      "open_mtm": -594.75
+      "latest_price": 4.6,
+      "open_mtm": -299.0
     }
   ],
   "audit": {

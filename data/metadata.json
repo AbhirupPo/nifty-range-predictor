@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-13",
+  "last_updated": "2026-08-14",
   "training_start": "2019-08-19",
-  "training_end": "2026-08-13",
-  "rows_total_raw": 1735,
-  "rows_used_for_modelling": 1734,
+  "training_end": "2026-08-14",
+  "rows_total_raw": 1736,
+  "rows_used_for_modelling": 1735,
   "return_deciles": 10,
   "vix_buckets": 4,
   "laplace_alpha": 0.5,
