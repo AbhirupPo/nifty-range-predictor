@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-20",
+  "last_updated": "2026-08-21",
   "source": "combined_live_order_logs",
   "summary": {
-    "total_pnl": -1111.5,
-    "total_return_pct": -0.28,
+    "total_pnl": -568.75,
+    "total_return_pct": -0.14,
     "capital_base": 400000.0,
     "trade_count": 373,
     "win_rate_pct": 52.01,
@@ -13,8 +13,8 @@
   },
   "strategies": {
     "range_strangle": {
-      "total_pnl": 13929.5,
-      "total_return_pct": 6.96,
+      "total_pnl": 14472.25,
+      "total_return_pct": 7.24,
       "capital_base": 200000.0,
       "trade_count": 154,
       "win_rate_pct": 55.84,
@@ -306,6 +306,13 @@
       "open_mtm": -1303.25,
       "cumulative_pnl": -1111.5,
       "return_pct": -0.28
+    },
+    {
+      "date": "2026-08-21",
+      "cash": 191.75,
+      "open_mtm": -760.5,
+      "cumulative_pnl": -568.75,
+      "return_pct": -0.14
     }
   ],
   "trades": [
@@ -5565,22 +5572,22 @@
       "strategy": "Range Strangle",
       "symbol": "NIFTY26AUG23800PE",
       "quantity": -65,
-      "latest_price": 7.05,
-      "open_mtm": -458.25
+      "latest_price": 4.1,
+      "open_mtm": -266.5
     },
     {
       "strategy": "Range Strangle",
       "symbol": "NIFTY26AUG23850PE",
       "quantity": -65,
-      "latest_price": 8.55,
-      "open_mtm": -555.75
+      "latest_price": 4.5,
+      "open_mtm": -292.5
     },
     {
       "strategy": "Range Strangle",
       "symbol": "NIFTY26AUG24700CE",
       "quantity": -65,
-      "latest_price": 4.25,
-      "open_mtm": -276.25
+      "latest_price": 2.9,
+      "open_mtm": -188.5
     }
   ],
   "audit": {
