@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-09-04",
+  "last_updated": "2026-09-07",
   "source": "combined_live_order_logs",
   "summary": {
-    "total_pnl": 1118.0,
-    "total_return_pct": 0.28,
+    "total_pnl": 5671.25,
+    "total_return_pct": 1.42,
     "capital_base": 400000.0,
-    "trade_count": 425,
-    "win_rate_pct": 51.29,
-    "average_pnl": -15.03,
+    "trade_count": 473,
+    "win_rate_pct": 52.22,
+    "average_pnl": -4.77,
     "best_trade": 2554.5,
     "worst_trade": -5362.5
   },
   "strategies": {
     "range_strangle": {
-      "total_pnl": 16159.0,
-      "total_return_pct": 8.08,
+      "total_pnl": 20712.25,
+      "total_return_pct": 10.36,
       "capital_base": 200000.0,
-      "trade_count": 206,
-      "win_rate_pct": 53.4,
-      "average_pnl": 42.01,
+      "trade_count": 254,
+      "win_rate_pct": 54.72,
+      "average_pnl": 50.34,
       "best_trade": 2554.5,
       "worst_trade": -5362.5
     },
@@ -36,353 +36,360 @@
   "equity_curve": [
     {
       "date": "2026-06-29",
-      "cash": 2824.25,
-      "open_mtm": -2993.25,
-      "cumulative_pnl": -169.0,
-      "return_pct": -0.04
+      "cash": 5398.25,
+      "open_mtm": -5986.5,
+      "cumulative_pnl": -588.25,
+      "return_pct": -0.15
     },
     {
       "date": "2026-06-30",
-      "cash": 3129.75,
-      "open_mtm": -2746.25,
-      "cumulative_pnl": 383.5,
-      "return_pct": 0.1
+      "cash": 5954.0,
+      "open_mtm": -5492.5,
+      "cumulative_pnl": 461.5,
+      "return_pct": 0.12
     },
     {
       "date": "2026-07-01",
-      "cash": 3152.5,
-      "open_mtm": -1651.0,
-      "cumulative_pnl": 1501.5,
-      "return_pct": 0.38
+      "cash": 6009.25,
+      "open_mtm": -3302.0,
+      "cumulative_pnl": 2707.25,
+      "return_pct": 0.68
     },
     {
       "date": "2026-07-02",
-      "cash": 3237.0,
-      "open_mtm": -1225.25,
-      "cumulative_pnl": 2011.75,
-      "return_pct": 0.5
+      "cash": 6441.5,
+      "open_mtm": -2450.5,
+      "cumulative_pnl": 3991.0,
+      "return_pct": 1.0
     },
     {
       "date": "2026-07-03",
-      "cash": 4312.75,
-      "open_mtm": -1732.25,
-      "cumulative_pnl": 2580.5,
-      "return_pct": 0.65
+      "cash": 8671.0,
+      "open_mtm": -3464.5,
+      "cumulative_pnl": 5206.5,
+      "return_pct": 1.3
     },
     {
       "date": "2026-07-06",
-      "cash": 5031.0,
-      "open_mtm": -1384.5,
-      "cumulative_pnl": 3646.5,
-      "return_pct": 0.91
+      "cash": 9815.0,
+      "open_mtm": -2769.0,
+      "cumulative_pnl": 7046.0,
+      "return_pct": 1.76
     },
     {
       "date": "2026-07-07",
-      "cash": 5031.0,
-      "open_mtm": -1147.25,
-      "cumulative_pnl": 3883.75,
-      "return_pct": 0.97
+      "cash": 9815.0,
+      "open_mtm": -2294.5,
+      "cumulative_pnl": 7520.5,
+      "return_pct": 1.88
     },
     {
       "date": "2026-07-08",
-      "cash": 4039.75,
-      "open_mtm": -15622.75,
-      "cumulative_pnl": -11583.0,
-      "return_pct": -2.9
+      "cash": 8823.75,
+      "open_mtm": -25844.0,
+      "cumulative_pnl": -17020.25,
+      "return_pct": -4.26
     },
     {
       "date": "2026-07-09",
-      "cash": 4498.0,
-      "open_mtm": -8372.0,
-      "cumulative_pnl": -3874.0,
-      "return_pct": -0.97
+      "cash": 9282.0,
+      "open_mtm": -12948.0,
+      "cumulative_pnl": -3666.0,
+      "return_pct": -0.92
     },
     {
       "date": "2026-07-10",
-      "cash": 2827.5,
-      "open_mtm": -2291.25,
-      "cumulative_pnl": 536.25,
-      "return_pct": 0.13
+      "cash": 7611.5,
+      "open_mtm": -3240.25,
+      "cumulative_pnl": 4371.25,
+      "return_pct": 1.09
     },
     {
       "date": "2026-07-13",
-      "cash": 3149.25,
-      "open_mtm": -3692.0,
-      "cumulative_pnl": -542.75,
-      "return_pct": -0.14
+      "cash": 7933.25,
+      "open_mtm": -4498.0,
+      "cumulative_pnl": 3435.25,
+      "return_pct": 0.86
     },
     {
       "date": "2026-07-14",
-      "cash": 3149.25,
-      "open_mtm": -2876.25,
-      "cumulative_pnl": 273.0,
-      "return_pct": 0.07
+      "cash": 7933.25,
+      "open_mtm": -2882.75,
+      "cumulative_pnl": 5050.5,
+      "return_pct": 1.26
     },
     {
       "date": "2026-07-15",
-      "cash": 3149.25,
-      "open_mtm": -1537.25,
-      "cumulative_pnl": 1612.0,
-      "return_pct": 0.4
+      "cash": 7933.25,
+      "open_mtm": -1543.75,
+      "cumulative_pnl": 6389.5,
+      "return_pct": 1.6
     },
     {
       "date": "2026-07-16",
-      "cash": 3149.25,
-      "open_mtm": -737.75,
-      "cumulative_pnl": 2411.5,
-      "return_pct": 0.6
+      "cash": 7933.25,
+      "open_mtm": -744.25,
+      "cumulative_pnl": 7189.0,
+      "return_pct": 1.8
     },
     {
       "date": "2026-07-17",
-      "cash": 7358.0,
-      "open_mtm": -4023.5,
-      "cumulative_pnl": 3334.5,
-      "return_pct": 0.83
+      "cash": 12142.0,
+      "open_mtm": -4030.0,
+      "cumulative_pnl": 8112.0,
+      "return_pct": 2.03
     },
     {
       "date": "2026-07-20",
-      "cash": 4342.0,
-      "open_mtm": -3003.0,
-      "cumulative_pnl": 1339.0,
-      "return_pct": 0.33
+      "cash": 9126.0,
+      "open_mtm": -3009.5,
+      "cumulative_pnl": 6116.5,
+      "return_pct": 1.53
     },
     {
       "date": "2026-07-21",
-      "cash": 1842.75,
-      "open_mtm": -2128.75,
-      "cumulative_pnl": -286.0,
-      "return_pct": -0.07
+      "cash": 6626.75,
+      "open_mtm": -2135.25,
+      "cumulative_pnl": 4491.5,
+      "return_pct": 1.12
     },
     {
       "date": "2026-07-22",
-      "cash": -373.75,
-      "open_mtm": -3422.25,
-      "cumulative_pnl": -3796.0,
-      "return_pct": -0.95
+      "cash": 4410.25,
+      "open_mtm": -3428.75,
+      "cumulative_pnl": 981.5,
+      "return_pct": 0.25
     },
     {
       "date": "2026-07-23",
-      "cash": -2158.0,
-      "open_mtm": -2284.75,
-      "cumulative_pnl": -4442.75,
-      "return_pct": -1.11
+      "cash": 2626.0,
+      "open_mtm": -2291.25,
+      "cumulative_pnl": 334.75,
+      "return_pct": 0.08
     },
     {
       "date": "2026-07-24",
-      "cash": -4410.25,
-      "open_mtm": -2372.5,
-      "cumulative_pnl": -6782.75,
-      "return_pct": -1.7
+      "cash": 373.75,
+      "open_mtm": -2379.0,
+      "cumulative_pnl": -2005.25,
+      "return_pct": -0.5
     },
     {
       "date": "2026-07-27",
-      "cash": -2635.75,
-      "open_mtm": -2440.75,
-      "cumulative_pnl": -5076.5,
-      "return_pct": -1.27
-    },
-    {
-      "date": "2026-07-28",
-      "cash": -1979.25,
-      "open_mtm": -1495.0,
-      "cumulative_pnl": -3474.25,
-      "return_pct": -0.87
-    },
-    {
-      "date": "2026-07-29",
-      "cash": -1774.5,
-      "open_mtm": -1667.25,
-      "cumulative_pnl": -3441.75,
-      "return_pct": -0.86
-    },
-    {
-      "date": "2026-07-30",
-      "cash": -4117.75,
-      "open_mtm": -906.75,
-      "cumulative_pnl": -5024.5,
-      "return_pct": -1.26
-    },
-    {
-      "date": "2026-07-31",
-      "cash": -5148.0,
-      "open_mtm": -578.5,
-      "cumulative_pnl": -5726.5,
-      "return_pct": -1.43
-    },
-    {
-      "date": "2026-08-03",
-      "cash": -4030.0,
-      "open_mtm": -2044.25,
-      "cumulative_pnl": -6074.25,
-      "return_pct": -1.52
-    },
-    {
-      "date": "2026-08-04",
-      "cash": -4137.25,
-      "open_mtm": -1833.0,
-      "cumulative_pnl": -5970.25,
-      "return_pct": -1.49
-    },
-    {
-      "date": "2026-08-05",
-      "cash": -4179.5,
-      "open_mtm": -2174.25,
-      "cumulative_pnl": -6353.75,
-      "return_pct": -1.59
-    },
-    {
-      "date": "2026-08-06",
-      "cash": -3714.75,
-      "open_mtm": -1937.0,
-      "cumulative_pnl": -5651.75,
-      "return_pct": -1.41
-    },
-    {
-      "date": "2026-08-07",
-      "cash": -3289.0,
-      "open_mtm": -2037.75,
-      "cumulative_pnl": -5326.75,
-      "return_pct": -1.33
-    },
-    {
-      "date": "2026-08-10",
-      "cash": -2427.75,
-      "open_mtm": -1547.0,
-      "cumulative_pnl": -3974.75,
-      "return_pct": -0.99
-    },
-    {
-      "date": "2026-08-11",
-      "cash": -2122.25,
-      "open_mtm": -1495.0,
-      "cumulative_pnl": -3617.25,
-      "return_pct": -0.9
-    },
-    {
-      "date": "2026-08-12",
-      "cash": -1842.75,
-      "open_mtm": -1735.5,
-      "cumulative_pnl": -3578.25,
-      "return_pct": -0.89
-    },
-    {
-      "date": "2026-08-13",
-      "cash": -1842.75,
-      "open_mtm": -822.25,
-      "cumulative_pnl": -2665.0,
-      "return_pct": -0.67
-    },
-    {
-      "date": "2026-08-14",
-      "cash": -1842.75,
-      "open_mtm": -539.5,
-      "cumulative_pnl": -2382.25,
-      "return_pct": -0.6
-    },
-    {
-      "date": "2026-08-17",
-      "cash": -633.75,
-      "open_mtm": -1404.0,
-      "cumulative_pnl": -2037.75,
-      "return_pct": -0.51
-    },
-    {
-      "date": "2026-08-18",
-      "cash": 416.0,
-      "open_mtm": -3120.0,
-      "cumulative_pnl": -2704.0,
-      "return_pct": -0.68
-    },
-    {
-      "date": "2026-08-19",
-      "cash": 585.0,
-      "open_mtm": -3126.5,
-      "cumulative_pnl": -2541.5,
-      "return_pct": -0.64
-    },
-    {
-      "date": "2026-08-20",
-      "cash": 191.75,
-      "open_mtm": -1303.25,
-      "cumulative_pnl": -1111.5,
-      "return_pct": -0.28
-    },
-    {
-      "date": "2026-08-21",
-      "cash": 191.75,
-      "open_mtm": -760.5,
-      "cumulative_pnl": -568.75,
-      "return_pct": -0.14
-    },
-    {
-      "date": "2026-08-24",
-      "cash": 838.5,
-      "open_mtm": -1699.75,
-      "cumulative_pnl": -861.25,
-      "return_pct": -0.22
-    },
-    {
-      "date": "2026-08-25",
-      "cash": 838.5,
-      "open_mtm": -1108.25,
-      "cumulative_pnl": -269.75,
+      "cash": 2148.25,
+      "open_mtm": -2447.25,
+      "cumulative_pnl": -299.0,
       "return_pct": -0.07
     },
     {
+      "date": "2026-07-28",
+      "cash": 2804.75,
+      "open_mtm": -1501.5,
+      "cumulative_pnl": 1303.25,
+      "return_pct": 0.33
+    },
+    {
+      "date": "2026-07-29",
+      "cash": 3009.5,
+      "open_mtm": -1673.75,
+      "cumulative_pnl": 1335.75,
+      "return_pct": 0.33
+    },
+    {
+      "date": "2026-07-30",
+      "cash": 666.25,
+      "open_mtm": -913.25,
+      "cumulative_pnl": -247.0,
+      "return_pct": -0.06
+    },
+    {
+      "date": "2026-07-31",
+      "cash": -364.0,
+      "open_mtm": -585.0,
+      "cumulative_pnl": -949.0,
+      "return_pct": -0.24
+    },
+    {
+      "date": "2026-08-03",
+      "cash": 754.0,
+      "open_mtm": -2050.75,
+      "cumulative_pnl": -1296.75,
+      "return_pct": -0.32
+    },
+    {
+      "date": "2026-08-04",
+      "cash": 646.75,
+      "open_mtm": -1839.5,
+      "cumulative_pnl": -1192.75,
+      "return_pct": -0.3
+    },
+    {
+      "date": "2026-08-05",
+      "cash": 604.5,
+      "open_mtm": -2180.75,
+      "cumulative_pnl": -1576.25,
+      "return_pct": -0.39
+    },
+    {
+      "date": "2026-08-06",
+      "cash": 1069.25,
+      "open_mtm": -1943.5,
+      "cumulative_pnl": -874.25,
+      "return_pct": -0.22
+    },
+    {
+      "date": "2026-08-07",
+      "cash": 1495.0,
+      "open_mtm": -2044.25,
+      "cumulative_pnl": -549.25,
+      "return_pct": -0.14
+    },
+    {
+      "date": "2026-08-10",
+      "cash": 2356.25,
+      "open_mtm": -1553.5,
+      "cumulative_pnl": 802.75,
+      "return_pct": 0.2
+    },
+    {
+      "date": "2026-08-11",
+      "cash": 2661.75,
+      "open_mtm": -1501.5,
+      "cumulative_pnl": 1160.25,
+      "return_pct": 0.29
+    },
+    {
+      "date": "2026-08-12",
+      "cash": 2941.25,
+      "open_mtm": -1742.0,
+      "cumulative_pnl": 1199.25,
+      "return_pct": 0.3
+    },
+    {
+      "date": "2026-08-13",
+      "cash": 2941.25,
+      "open_mtm": -828.75,
+      "cumulative_pnl": 2112.5,
+      "return_pct": 0.53
+    },
+    {
+      "date": "2026-08-14",
+      "cash": 2941.25,
+      "open_mtm": -546.0,
+      "cumulative_pnl": 2395.25,
+      "return_pct": 0.6
+    },
+    {
+      "date": "2026-08-17",
+      "cash": 4150.25,
+      "open_mtm": -1410.5,
+      "cumulative_pnl": 2739.75,
+      "return_pct": 0.68
+    },
+    {
+      "date": "2026-08-18",
+      "cash": 5200.0,
+      "open_mtm": -3126.5,
+      "cumulative_pnl": 2073.5,
+      "return_pct": 0.52
+    },
+    {
+      "date": "2026-08-19",
+      "cash": 5369.0,
+      "open_mtm": -3133.0,
+      "cumulative_pnl": 2236.0,
+      "return_pct": 0.56
+    },
+    {
+      "date": "2026-08-20",
+      "cash": 4975.75,
+      "open_mtm": -1309.75,
+      "cumulative_pnl": 3666.0,
+      "return_pct": 0.92
+    },
+    {
+      "date": "2026-08-21",
+      "cash": 4975.75,
+      "open_mtm": -767.0,
+      "cumulative_pnl": 4208.75,
+      "return_pct": 1.05
+    },
+    {
+      "date": "2026-08-24",
+      "cash": 5622.5,
+      "open_mtm": -1706.25,
+      "cumulative_pnl": 3916.25,
+      "return_pct": 0.98
+    },
+    {
+      "date": "2026-08-25",
+      "cash": 5622.5,
+      "open_mtm": -1114.75,
+      "cumulative_pnl": 4507.75,
+      "return_pct": 1.13
+    },
+    {
       "date": "2026-08-26",
-      "cash": 799.5,
-      "open_mtm": -1140.75,
-      "cumulative_pnl": -341.25,
-      "return_pct": -0.09
+      "cash": 5583.5,
+      "open_mtm": -1147.25,
+      "cumulative_pnl": 4436.25,
+      "return_pct": 1.11
     },
     {
       "date": "2026-08-27",
-      "cash": 1017.25,
-      "open_mtm": -1501.5,
-      "cumulative_pnl": -484.25,
-      "return_pct": -0.12
+      "cash": 5801.25,
+      "open_mtm": -1508.0,
+      "cumulative_pnl": 4293.25,
+      "return_pct": 1.07
     },
     {
       "date": "2026-08-28",
-      "cash": 1017.25,
-      "open_mtm": -767.0,
-      "cumulative_pnl": 250.25,
-      "return_pct": 0.06
+      "cash": 5801.25,
+      "open_mtm": -773.5,
+      "cumulative_pnl": 5027.75,
+      "return_pct": 1.26
     },
     {
       "date": "2026-08-31",
-      "cash": 2015.0,
-      "open_mtm": -1378.0,
-      "cumulative_pnl": 637.0,
-      "return_pct": 0.16
+      "cash": 6799.0,
+      "open_mtm": -1384.5,
+      "cumulative_pnl": 5414.5,
+      "return_pct": 1.35
     },
     {
       "date": "2026-09-01",
-      "cash": 2015.0,
-      "open_mtm": -1290.25,
-      "cumulative_pnl": 724.75,
-      "return_pct": 0.18
+      "cash": 6799.0,
+      "open_mtm": -1296.75,
+      "cumulative_pnl": 5502.25,
+      "return_pct": 1.38
     },
     {
       "date": "2026-09-02",
-      "cash": 1943.5,
-      "open_mtm": -1592.5,
-      "cumulative_pnl": 351.0,
-      "return_pct": 0.09
+      "cash": 6727.5,
+      "open_mtm": -1599.0,
+      "cumulative_pnl": 5128.5,
+      "return_pct": 1.28
     },
     {
       "date": "2026-09-03",
-      "cash": 1787.5,
-      "open_mtm": -1881.75,
-      "cumulative_pnl": -94.25,
-      "return_pct": -0.02
+      "cash": 6571.5,
+      "open_mtm": -1888.25,
+      "cumulative_pnl": 4683.25,
+      "return_pct": 1.17
     },
     {
       "date": "2026-09-04",
-      "cash": 1787.5,
-      "open_mtm": -669.5,
-      "cumulative_pnl": 1118.0,
-      "return_pct": 0.28
+      "cash": 6571.5,
+      "open_mtm": -676.0,
+      "cumulative_pnl": 5895.5,
+      "return_pct": 1.47
+    },
+    {
+      "date": "2026-09-07",
+      "cash": 7770.75,
+      "open_mtm": -2099.5,
+      "cumulative_pnl": 5671.25,
+      "return_pct": 1.42
     }
   ],
   "trades": [
@@ -397,6 +404,20 @@
       "pnl": 35.75,
       "entry_time": "2026-06-29T09:15:12.050143+05:30",
       "exit_time": "2026-06-29T09:45:05.877800+05:30",
+      "entry_order_no": "260629000004850.0",
+      "exit_order_no": "260629000059640.0"
+    },
+    {
+      "date": "2026-06-29",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724700CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 19.4,
+      "exit_price": 17.7,
+      "pnl": 110.5,
+      "entry_time": "2026-06-29T09:15:13+05:30",
+      "exit_time": "2026-06-29T09:45:07+05:30",
       "entry_order_no": "260629000004850",
       "exit_order_no": "260629000059640"
     },
@@ -411,6 +432,20 @@
       "pnl": -107.25,
       "entry_time": "2026-06-29T09:15:10.367621+05:30",
       "exit_time": "2026-06-29T11:45:07.232246+05:30",
+      "entry_order_no": "260629000004782.0",
+      "exit_order_no": "260629000176656.0"
+    },
+    {
+      "date": "2026-06-29",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723500PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 26.7,
+      "exit_price": 32.8,
+      "pnl": -396.5,
+      "entry_time": "2026-06-29T09:15:11+05:30",
+      "exit_time": "2026-06-29T11:45:08+05:30",
       "entry_order_no": "260629000004782",
       "exit_order_no": "260629000176656"
     },
@@ -425,6 +460,20 @@
       "pnl": 136.5,
       "entry_time": "2026-06-29T09:45:07.783396+05:30",
       "exit_time": "2026-06-29T11:45:09.018699+05:30",
+      "entry_order_no": "260629000059680.0",
+      "exit_order_no": "260629000176728.0"
+    },
+    {
+      "date": "2026-06-29",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724750CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 14.0,
+      "exit_price": 12.2,
+      "pnl": 117.0,
+      "entry_time": "2026-06-29T09:45:09+05:30",
+      "exit_time": "2026-06-29T11:45:10+05:30",
       "entry_order_no": "260629000059680",
       "exit_order_no": "260629000176728"
     },
@@ -439,6 +488,20 @@
       "pnl": -848.25,
       "entry_time": "2026-06-29T11:45:10.940717+05:30",
       "exit_time": "2026-06-29T12:45:05.639236+05:30",
+      "entry_order_no": "260629000176789.0",
+      "exit_order_no": "260629000228596.0"
+    },
+    {
+      "date": "2026-06-29",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723450PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 25.6,
+      "exit_price": 40.0,
+      "pnl": -936.0,
+      "entry_time": "2026-06-29T11:45:12+05:30",
+      "exit_time": "2026-06-29T12:45:07+05:30",
       "entry_order_no": "260629000176789",
       "exit_order_no": "260629000228596"
     },
@@ -453,6 +516,20 @@
       "pnl": 39.0,
       "entry_time": "2026-06-29T11:45:12.842315+05:30",
       "exit_time": "2026-06-29T12:45:07.359322+05:30",
+      "entry_order_no": "260629000176832.0",
+      "exit_order_no": "260629000228631.0"
+    },
+    {
+      "date": "2026-06-29",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724650CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 19.15,
+      "exit_price": 18.1,
+      "pnl": 68.25,
+      "entry_time": "2026-06-29T11:45:14+05:30",
+      "exit_time": "2026-06-29T12:45:08+05:30",
       "entry_order_no": "260629000176832",
       "exit_order_no": "260629000228631"
     },
@@ -467,6 +544,20 @@
       "pnl": 87.75,
       "entry_time": "2026-06-29T12:45:09.490052+05:30",
       "exit_time": "2026-06-30T09:30:05.590501+05:30",
+      "entry_order_no": "260629000228691.0",
+      "exit_order_no": "260630000055792.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723400PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 33.65,
+      "exit_price": 34.55,
+      "pnl": -58.5,
+      "entry_time": "2026-06-29T12:45:10+05:30",
+      "exit_time": "2026-06-30T09:30:07+05:30",
       "entry_order_no": "260629000228691",
       "exit_order_no": "260630000055792"
     },
@@ -481,6 +572,20 @@
       "pnl": 282.75,
       "entry_time": "2026-06-29T12:45:11.321503+05:30",
       "exit_time": "2026-06-30T09:30:07.291672+05:30",
+      "entry_order_no": "260629000228733.0",
+      "exit_order_no": "260630000055871.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724600CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 21.9,
+      "exit_price": 17.2,
+      "pnl": 305.5,
+      "entry_time": "2026-06-29T12:45:12+05:30",
+      "exit_time": "2026-06-30T09:30:08+05:30",
       "entry_order_no": "260629000228733",
       "exit_order_no": "260630000055871"
     },
@@ -495,6 +600,20 @@
       "pnl": 529.75,
       "entry_time": "2026-06-30T09:30:09.131164+05:30",
       "exit_time": "2026-06-30T11:15:05.402577+05:30",
+      "entry_order_no": "260630000055942.0",
+      "exit_order_no": "260630000205535.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723350PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 28.4,
+      "exit_price": 17.65,
+      "pnl": 698.75,
+      "entry_time": "2026-06-30T09:30:10+05:30",
+      "exit_time": "2026-06-30T11:15:06+05:30",
       "entry_order_no": "260630000055942",
       "exit_order_no": "260630000205535"
     },
@@ -509,6 +628,20 @@
       "pnl": -87.75,
       "entry_time": "2026-06-30T09:30:10.953892+05:30",
       "exit_time": "2026-06-30T11:15:07.104539+05:30",
+      "entry_order_no": "260630000056014.0",
+      "exit_order_no": "260630000205590.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724450CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 31.25,
+      "exit_price": 32.55,
+      "pnl": -84.5,
+      "entry_time": "2026-06-30T09:30:12+05:30",
+      "exit_time": "2026-06-30T11:15:08+05:30",
       "entry_order_no": "260630000056014",
       "exit_order_no": "260630000205590"
     },
@@ -523,6 +656,20 @@
       "pnl": 341.25,
       "entry_time": "2026-06-30T11:15:08.950837+05:30",
       "exit_time": "2026-06-30T11:30:05.754449+05:30",
+      "entry_order_no": "260630000205659.0",
+      "exit_order_no": "260630000235594.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723400PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 21.75,
+      "exit_price": 19.35,
+      "pnl": 156.0,
+      "entry_time": "2026-06-30T11:15:10+05:30",
+      "exit_time": "2026-06-30T11:30:07+05:30",
       "entry_order_no": "260630000205659",
       "exit_order_no": "260630000235594"
     },
@@ -537,6 +684,20 @@
       "pnl": -55.25,
       "entry_time": "2026-06-30T11:15:10.805561+05:30",
       "exit_time": "2026-06-30T11:30:07.495394+05:30",
+      "entry_order_no": "260630000205738.0",
+      "exit_order_no": "260630000235636.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724500CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 26.5,
+      "exit_price": 25.9,
+      "pnl": 39.0,
+      "entry_time": "2026-06-30T11:15:12+05:30",
+      "exit_time": "2026-06-30T11:30:08+05:30",
       "entry_order_no": "260630000205738",
       "exit_order_no": "260630000235636"
     },
@@ -551,6 +712,20 @@
       "pnl": -224.25,
       "entry_time": "2026-06-30T11:30:09.321760+05:30",
       "exit_time": "2026-06-30T12:30:06.364310+05:30",
+      "entry_order_no": "260630000235685.0",
+      "exit_order_no": "260630000304183.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723450PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 23.45,
+      "exit_price": 25.35,
+      "pnl": -123.5,
+      "entry_time": "2026-06-30T11:30:10+05:30",
+      "exit_time": "2026-06-30T12:30:07+05:30",
       "entry_order_no": "260630000235685",
       "exit_order_no": "260630000304183"
     },
@@ -565,6 +740,20 @@
       "pnl": 308.75,
       "entry_time": "2026-06-30T11:30:11.248719+05:30",
       "exit_time": "2026-06-30T12:30:08.123670+05:30",
+      "entry_order_no": "260630000235725.0",
+      "exit_order_no": "260630000304201.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724550CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 20.9,
+      "exit_price": 17.15,
+      "pnl": 243.75,
+      "entry_time": "2026-06-30T11:30:12+05:30",
+      "exit_time": "2026-06-30T12:30:09+05:30",
       "entry_order_no": "260630000235725",
       "exit_order_no": "260630000304201"
     },
@@ -579,6 +768,20 @@
       "pnl": 110.5,
       "entry_time": "2026-06-30T12:30:10.414399+05:30",
       "exit_time": "2026-06-30T12:45:05.587147+05:30",
+      "entry_order_no": "260630000304225.0",
+      "exit_order_no": "260630000323064.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723400PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 20.45,
+      "exit_price": 17.05,
+      "pnl": 221.0,
+      "entry_time": "2026-06-30T12:30:11+05:30",
+      "exit_time": "2026-06-30T12:45:07+05:30",
       "entry_order_no": "260630000304225",
       "exit_order_no": "260630000323064"
     },
@@ -593,6 +796,20 @@
       "pnl": -97.5,
       "entry_time": "2026-06-30T12:30:12.317932+05:30",
       "exit_time": "2026-06-30T12:45:07.314526+05:30",
+      "entry_order_no": "260630000304245.0",
+      "exit_order_no": "260630000323104.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724450CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 27.0,
+      "exit_price": 29.2,
+      "pnl": -143.0,
+      "entry_time": "2026-06-30T12:30:13+05:30",
+      "exit_time": "2026-06-30T12:45:08+05:30",
       "entry_order_no": "260630000304245",
       "exit_order_no": "260630000323104"
     },
@@ -607,6 +824,20 @@
       "pnl": -130.0,
       "entry_time": "2026-06-30T12:45:09.155674+05:30",
       "exit_time": "2026-06-30T13:15:05.128533+05:30",
+      "entry_order_no": "260630000323142.0",
+      "exit_order_no": "260630000352174.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723450PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 20.9,
+      "exit_price": 22.2,
+      "pnl": -84.5,
+      "entry_time": "2026-06-30T12:45:10+05:30",
+      "exit_time": "2026-06-30T13:15:06+05:30",
       "entry_order_no": "260630000323142",
       "exit_order_no": "260630000352174"
     },
@@ -621,6 +852,20 @@
       "pnl": 117.0,
       "entry_time": "2026-06-30T12:45:11.091618+05:30",
       "exit_time": "2026-06-30T13:15:06.835811+05:30",
+      "entry_order_no": "260630000323177.0",
+      "exit_order_no": "260630000352207.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724500CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 23.55,
+      "exit_price": 21.95,
+      "pnl": 104.0,
+      "entry_time": "2026-06-30T12:45:12+05:30",
+      "exit_time": "2026-06-30T13:15:08+05:30",
       "entry_order_no": "260630000323177",
       "exit_order_no": "260630000352207"
     },
@@ -635,6 +880,20 @@
       "pnl": 117.0,
       "entry_time": "2026-06-30T13:15:08.679581+05:30",
       "exit_time": "2026-06-30T13:30:06.005458+05:30",
+      "entry_order_no": "260630000352240.0",
+      "exit_order_no": "260630000371542.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723400PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 17.6,
+      "exit_price": 16.6,
+      "pnl": 65.0,
+      "entry_time": "2026-06-30T13:15:10+05:30",
+      "exit_time": "2026-06-30T13:30:07+05:30",
       "entry_order_no": "260630000352240",
       "exit_order_no": "260630000371542"
     },
@@ -649,6 +908,20 @@
       "pnl": 9.75,
       "entry_time": "2026-06-30T13:15:10.491806+05:30",
       "exit_time": "2026-06-30T13:30:07.832624+05:30",
+      "entry_order_no": "260630000352264.0",
+      "exit_order_no": "260630000371582.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724450CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 27.55,
+      "exit_price": 27.65,
+      "pnl": -6.5,
+      "entry_time": "2026-06-30T13:15:11+05:30",
+      "exit_time": "2026-06-30T13:30:09+05:30",
       "entry_order_no": "260630000352264",
       "exit_order_no": "260630000371582"
     },
@@ -663,6 +936,20 @@
       "pnl": -474.5,
       "entry_time": "2026-06-30T13:30:09.902141+05:30",
       "exit_time": "2026-06-30T14:15:05.604680+05:30",
+      "entry_order_no": "260630000371634.0",
+      "exit_order_no": "260630000434916.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723450PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 20.8,
+      "exit_price": 27.65,
+      "pnl": -445.25,
+      "entry_time": "2026-06-30T13:30:11+05:30",
+      "exit_time": "2026-06-30T14:15:07+05:30",
       "entry_order_no": "260630000371634",
       "exit_order_no": "260630000434916"
     },
@@ -677,6 +964,20 @@
       "pnl": 165.75,
       "entry_time": "2026-06-30T13:30:11.998822+05:30",
       "exit_time": "2026-06-30T14:15:07.357010+05:30",
+      "entry_order_no": "260630000371667.0",
+      "exit_order_no": "260630000434959.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724500CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 22.05,
+      "exit_price": 19.45,
+      "pnl": 169.0,
+      "entry_time": "2026-06-30T13:30:13+05:30",
+      "exit_time": "2026-06-30T14:15:08+05:30",
       "entry_order_no": "260630000371667",
       "exit_order_no": "260630000434959"
     },
@@ -691,6 +992,20 @@
       "pnl": 477.75,
       "entry_time": "2026-06-30T14:15:09.166451+05:30",
       "exit_time": "2026-06-30T14:30:06.155583+05:30",
+      "entry_order_no": "260630000434990.0",
+      "exit_order_no": "260630000484366.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723400PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 22.0,
+      "exit_price": 14.05,
+      "pnl": 516.75,
+      "entry_time": "2026-06-30T14:15:10+05:30",
+      "exit_time": "2026-06-30T14:30:07+05:30",
       "entry_order_no": "260630000434990",
       "exit_order_no": "260630000484366"
     },
@@ -705,6 +1020,20 @@
       "pnl": -279.5,
       "entry_time": "2026-06-30T14:15:11.012000+05:30",
       "exit_time": "2026-06-30T14:30:07.815481+05:30",
+      "entry_order_no": "260630000435030.0",
+      "exit_order_no": "260630000484450.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724400CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 28.95,
+      "exit_price": 34.25,
+      "pnl": -344.5,
+      "entry_time": "2026-06-30T14:15:12+05:30",
+      "exit_time": "2026-06-30T14:30:09+05:30",
       "entry_order_no": "260630000435030",
       "exit_order_no": "260630000484450"
     },
@@ -719,6 +1048,20 @@
       "pnl": -139.75,
       "entry_time": "2026-06-30T14:30:09.660919+05:30",
       "exit_time": "2026-06-30T15:00:05.817913+05:30",
+      "entry_order_no": "260630000484593.0",
+      "exit_order_no": "260630000544899.0"
+    },
+    {
+      "date": "2026-06-30",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723450PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 18.2,
+      "exit_price": 25.35,
+      "pnl": -464.75,
+      "entry_time": "2026-06-30T14:30:11+05:30",
+      "exit_time": "2026-06-30T15:00:07+05:30",
       "entry_order_no": "260630000484593",
       "exit_order_no": "260630000544899"
     },
@@ -733,6 +1076,20 @@
       "pnl": -130.0,
       "entry_time": "2026-06-30T15:00:07.776314+05:30",
       "exit_time": "2026-07-01T09:45:04.217531+05:30",
+      "entry_order_no": "260630000545133.0",
+      "exit_order_no": "260701000045572.0"
+    },
+    {
+      "date": "2026-07-01",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723400PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 19.95,
+      "exit_price": 17.75,
+      "pnl": 143.0,
+      "entry_time": "2026-06-30T15:00:09+05:30",
+      "exit_time": "2026-07-01T09:45:05+05:30",
       "entry_order_no": "260630000545133",
       "exit_order_no": "260701000045572"
     },
@@ -747,6 +1104,20 @@
       "pnl": 237.25,
       "entry_time": "2026-06-30T14:30:11.557845+05:30",
       "exit_time": "2026-07-01T09:45:05.986870+05:30",
+      "entry_order_no": "260630000484716.0",
+      "exit_order_no": "260701000045609.0"
+    },
+    {
+      "date": "2026-07-01",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724450CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 27.7,
+      "exit_price": 23.2,
+      "pnl": 292.5,
+      "entry_time": "2026-06-30T14:30:13+05:30",
+      "exit_time": "2026-07-01T09:45:07+05:30",
       "entry_order_no": "260630000484716",
       "exit_order_no": "260701000045609"
     },
@@ -761,6 +1132,20 @@
       "pnl": -126.75,
       "entry_time": "2026-07-01T09:45:09.675992+05:30",
       "exit_time": "2026-07-01T10:00:03.892175+05:30",
+      "entry_order_no": "260701000045680.0",
+      "exit_order_no": "260701000062310.0"
+    },
+    {
+      "date": "2026-07-01",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724500CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 18.3,
+      "exit_price": 19.95,
+      "pnl": -107.25,
+      "entry_time": "2026-07-01T09:45:11+05:30",
+      "exit_time": "2026-07-01T10:00:05+05:30",
       "entry_order_no": "260701000045680",
       "exit_order_no": "260701000062310"
     },
@@ -775,6 +1160,20 @@
       "pnl": 1225.25,
       "entry_time": "2026-07-01T09:45:07.855580+05:30",
       "exit_time": "2026-07-02T09:45:03.460452+05:30",
+      "entry_order_no": "260701000045641.0",
+      "exit_order_no": "260702000071704.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723500PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 27.5,
+      "exit_price": 9.0,
+      "pnl": 1202.5,
+      "entry_time": "2026-07-01T09:45:09+05:30",
+      "exit_time": "2026-07-02T09:45:04+05:30",
       "entry_order_no": "260701000045641",
       "exit_order_no": "260702000071704"
     },
@@ -789,6 +1188,20 @@
       "pnl": 52.0,
       "entry_time": "2026-07-01T10:00:05.820307+05:30",
       "exit_time": "2026-07-02T09:45:05.196221+05:30",
+      "entry_order_no": "260701000062423.0",
+      "exit_order_no": "260702000071762.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724550CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 15.6,
+      "exit_price": 14.3,
+      "pnl": 84.5,
+      "entry_time": "2026-07-01T10:00:07+05:30",
+      "exit_time": "2026-07-02T09:45:06+05:30",
       "entry_order_no": "260701000062423",
       "exit_order_no": "260702000071762"
     },
@@ -803,6 +1216,20 @@
       "pnl": -585.0,
       "entry_time": "2026-07-02T09:45:07.008362+05:30",
       "exit_time": "2026-07-02T10:15:03.561253+05:30",
+      "entry_order_no": "260702000071812.0",
+      "exit_order_no": "260702000123175.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723800PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 28.5,
+      "exit_price": 33.65,
+      "pnl": -334.75,
+      "entry_time": "2026-07-02T09:45:08+05:30",
+      "exit_time": "2026-07-02T10:15:05+05:30",
       "entry_order_no": "260702000071812",
       "exit_order_no": "260702000123175"
     },
@@ -817,6 +1244,20 @@
       "pnl": 240.5,
       "entry_time": "2026-07-02T09:45:08.833888+05:30",
       "exit_time": "2026-07-02T10:15:05.275896+05:30",
+      "entry_order_no": "260702000071858.0",
+      "exit_order_no": "260702000123357.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724600CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 9.75,
+      "exit_price": 7.0,
+      "pnl": 178.75,
+      "entry_time": "2026-07-02T09:45:10+05:30",
+      "exit_time": "2026-07-02T10:15:06+05:30",
       "entry_order_no": "260702000071858",
       "exit_order_no": "260702000123357"
     },
@@ -831,6 +1272,20 @@
       "pnl": 536.25,
       "entry_time": "2026-07-02T10:15:07.144439+05:30",
       "exit_time": "2026-07-02T12:30:03.750103+05:30",
+      "entry_order_no": "260702000123561.0",
+      "exit_order_no": "260702000268345.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723700PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 20.95,
+      "exit_price": 15.35,
+      "pnl": 364.0,
+      "entry_time": "2026-07-02T10:15:08+05:30",
+      "exit_time": "2026-07-02T12:30:05+05:30",
       "entry_order_no": "260702000123561",
       "exit_order_no": "260702000268345"
     },
@@ -845,6 +1300,20 @@
       "pnl": -136.5,
       "entry_time": "2026-07-02T10:15:08.976711+05:30",
       "exit_time": "2026-07-02T12:30:05.527535+05:30",
+      "entry_order_no": "260702000123730.0",
+      "exit_order_no": "260702000268371.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724500CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 13.7,
+      "exit_price": 13.9,
+      "pnl": -13.0,
+      "entry_time": "2026-07-02T10:15:10+05:30",
+      "exit_time": "2026-07-02T12:30:07+05:30",
       "entry_order_no": "260702000123730",
       "exit_order_no": "260702000268371"
     },
@@ -859,6 +1328,20 @@
       "pnl": -61.75,
       "entry_time": "2026-07-02T12:30:08.226089+05:30",
       "exit_time": "2026-07-02T13:00:03.601025+05:30",
+      "entry_order_no": "260702000268438.0",
+      "exit_order_no": "260702000297376.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723800PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 24.75,
+      "exit_price": 24.0,
+      "pnl": 48.75,
+      "entry_time": "2026-07-02T12:30:10+05:30",
+      "exit_time": "2026-07-02T13:00:05+05:30",
       "entry_order_no": "260702000268438",
       "exit_order_no": "260702000297376"
     },
@@ -873,6 +1356,20 @@
       "pnl": 91.0,
       "entry_time": "2026-07-02T12:30:10.748672+05:30",
       "exit_time": "2026-07-02T13:00:05.359998+05:30",
+      "entry_order_no": "260702000268519.0",
+      "exit_order_no": "260702000297417.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724550CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 9.7,
+      "exit_price": 9.2,
+      "pnl": 32.5,
+      "entry_time": "2026-07-02T12:30:12+05:30",
+      "exit_time": "2026-07-02T13:00:06+05:30",
       "entry_order_no": "260702000268519",
       "exit_order_no": "260702000297417"
     },
@@ -887,6 +1384,20 @@
       "pnl": -133.25,
       "entry_time": "2026-07-02T13:00:09.082185+05:30",
       "exit_time": "2026-07-02T13:15:03.699744+05:30",
+      "entry_order_no": "260702000297484.0",
+      "exit_order_no": "260702000315797.0"
+    },
+    {
+      "date": "2026-07-02",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724500CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 13.35,
+      "exit_price": 14.4,
+      "pnl": -68.25,
+      "entry_time": "2026-07-02T13:00:10+05:30",
+      "exit_time": "2026-07-02T13:15:05+05:30",
       "entry_order_no": "260702000297484",
       "exit_order_no": "260702000315797"
     },
@@ -901,6 +1412,20 @@
       "pnl": 851.5,
       "entry_time": "2026-07-02T13:00:07.226447+05:30",
       "exit_time": "2026-07-03T09:15:03.404384+05:30",
+      "entry_order_no": "260702000297444.0",
+      "exit_order_no": "260703000005031.0"
+    },
+    {
+      "date": "2026-07-03",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670723750PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 18.6,
+      "exit_price": 7.65,
+      "pnl": 711.75,
+      "entry_time": "2026-07-02T13:00:08+05:30",
+      "exit_time": "2026-07-03T09:15:04+05:30",
       "entry_order_no": "260702000297444",
       "exit_order_no": "260703000005031"
     },
@@ -915,6 +1440,20 @@
       "pnl": -429.0,
       "entry_time": "2026-07-02T13:15:05.644270+05:30",
       "exit_time": "2026-07-03T09:15:05.115272+05:30",
+      "entry_order_no": "260702000315817.0",
+      "exit_order_no": "260703000005245.0"
+    },
+    {
+      "date": "2026-07-03",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724600CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 6.85,
+      "exit_price": 14.8,
+      "pnl": -516.75,
+      "entry_time": "2026-07-02T13:15:07+05:30",
+      "exit_time": "2026-07-03T09:15:06+05:30",
       "entry_order_no": "260702000315817",
       "exit_order_no": "260703000005245"
     },
@@ -929,6 +1468,20 @@
       "pnl": -139.75,
       "entry_time": "2026-07-03T09:15:07.226114+05:30",
       "exit_time": "2026-07-03T13:45:03.837365+05:30",
+      "entry_order_no": "260703000005398.0",
+      "exit_order_no": "260703000181371.0"
+    },
+    {
+      "date": "2026-07-03",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724050PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 28.85,
+      "exit_price": 26.7,
+      "pnl": 139.75,
+      "entry_time": "2026-07-03T09:15:08+05:30",
+      "exit_time": "2026-07-03T13:45:05+05:30",
       "entry_order_no": "260703000005398",
       "exit_order_no": "260703000181371"
     },
@@ -943,6 +1496,20 @@
       "pnl": 26.0,
       "entry_time": "2026-07-03T09:15:09.137281+05:30",
       "exit_time": "2026-07-03T13:45:05.584958+05:30",
+      "entry_order_no": "260703000005544.0",
+      "exit_order_no": "260703000181389.0"
+    },
+    {
+      "date": "2026-07-03",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724750CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 4.7,
+      "exit_price": 4.15,
+      "pnl": 35.75,
+      "entry_time": "2026-07-03T09:15:10+05:30",
+      "exit_time": "2026-07-03T13:45:07+05:30",
       "entry_order_no": "260703000005544",
       "exit_order_no": "260703000181389"
     },
@@ -957,6 +1524,20 @@
       "pnl": 568.75,
       "entry_time": "2026-07-03T13:45:07.462363+05:30",
       "exit_time": "2026-07-06T09:15:04.179068+05:30",
+      "entry_order_no": "260703000181411.0",
+      "exit_order_no": "260706000004263.0"
+    },
+    {
+      "date": "2026-07-06",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724000PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 20.85,
+      "exit_price": 7.75,
+      "pnl": 851.5,
+      "entry_time": "2026-07-03T13:45:08+05:30",
+      "exit_time": "2026-07-06T09:15:05+05:30",
       "entry_order_no": "260703000181411",
       "exit_order_no": "260706000004263"
     },
@@ -971,6 +1552,20 @@
       "pnl": 559.0,
       "entry_time": "2026-07-03T13:45:09.314822+05:30",
       "exit_time": "2026-07-06T09:15:05.929660+05:30",
+      "entry_order_no": "260703000181436.0",
+      "exit_order_no": "260706000004394.0"
+    },
+    {
+      "date": "2026-07-06",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2670724550CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 16.65,
+      "exit_price": 12.15,
+      "pnl": 292.5,
+      "entry_time": "2026-07-03T13:45:10+05:30",
+      "exit_time": "2026-07-06T09:15:08+05:30",
       "entry_order_no": "260703000181436",
       "exit_order_no": "260706000004394"
     },
@@ -985,6 +1580,20 @@
       "pnl": 624.0,
       "entry_time": "2026-07-06T09:15:08.748817+05:30",
       "exit_time": "2026-07-06T09:30:06.914687+05:30",
+      "entry_order_no": "260706000004526.0",
+      "exit_order_no": "260706000030135.0"
+    },
+    {
+      "date": "2026-07-06",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2671423850PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 26.7,
+      "exit_price": 23.2,
+      "pnl": 227.5,
+      "entry_time": "2026-07-06T09:15:10+05:30",
+      "exit_time": "2026-07-06T09:30:08+05:30",
       "entry_order_no": "260706000004526",
       "exit_order_no": "260706000030135"
     },
@@ -999,6 +1608,20 @@
       "pnl": -136.5,
       "entry_time": "2026-07-06T09:15:10.433099+05:30",
       "exit_time": "2026-07-06T10:30:04.279543+05:30",
+      "entry_order_no": "260706000004599.0",
+      "exit_order_no": "260706000085316.0"
+    },
+    {
+      "date": "2026-07-06",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2671425000CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 9.75,
+      "exit_price": 10.15,
+      "pnl": -26.0,
+      "entry_time": "2026-07-06T09:15:12+05:30",
+      "exit_time": "2026-07-06T10:30:05+05:30",
       "entry_order_no": "260706000004599",
       "exit_order_no": "260706000085316"
     },
@@ -1013,6 +1636,20 @@
       "pnl": -120.25,
       "entry_time": "2026-07-06T10:30:06.102093+05:30",
       "exit_time": "2026-07-06T12:15:04.221221+05:30",
+      "entry_order_no": "260706000085353.0",
+      "exit_order_no": "260706000155674.0"
+    },
+    {
+      "date": "2026-07-06",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2671425100CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 6.0,
+      "exit_price": 7.9,
+      "pnl": -123.5,
+      "entry_time": "2026-07-06T10:30:08+05:30",
+      "exit_time": "2026-07-06T12:15:05+05:30",
       "entry_order_no": "260706000085353",
       "exit_order_no": "260706000155674"
     },
@@ -1027,8 +1664,8 @@
       "pnl": -5362.5,
       "entry_time": "2026-07-06T09:30:08.817178+05:30",
       "exit_time": "2026-07-08T14:00:04.615797+05:30",
-      "entry_order_no": "260706000030214",
-      "exit_order_no": "260708000265319"
+      "entry_order_no": "260706000030214.0",
+      "exit_order_no": "260708000265319.0"
     },
     {
       "date": "2026-07-08",
@@ -1041,8 +1678,8 @@
       "pnl": 237.25,
       "entry_time": "2026-07-08T09:15:06.740571+05:30",
       "exit_time": "2026-07-08T14:00:06.306171+05:30",
-      "entry_order_no": "260708000005124",
-      "exit_order_no": "260708000265400"
+      "entry_order_no": "260708000005124.0",
+      "exit_order_no": "260708000265400.0"
     },
     {
       "date": "2026-07-08",
@@ -1055,8 +1692,8 @@
       "pnl": -2960.75,
       "entry_time": "2026-07-08T14:00:08.193833+05:30",
       "exit_time": "2026-07-08T14:15:04.631331+05:30",
-      "entry_order_no": "260708000265477",
-      "exit_order_no": "260708000298502"
+      "entry_order_no": "260708000265477.0",
+      "exit_order_no": "260708000298502.0"
     },
     {
       "date": "2026-07-08",
@@ -1069,8 +1706,8 @@
       "pnl": 143.0,
       "entry_time": "2026-07-08T14:00:10.044643+05:30",
       "exit_time": "2026-07-08T14:15:06.315250+05:30",
-      "entry_order_no": "260708000265549",
-      "exit_order_no": "260708000298564"
+      "entry_order_no": "260708000265549.0",
+      "exit_order_no": "260708000298564.0"
     },
     {
       "date": "2026-07-08",
@@ -1083,8 +1720,8 @@
       "pnl": 214.5,
       "entry_time": "2026-07-08T14:15:08.164209+05:30",
       "exit_time": "2026-07-08T14:45:04.636095+05:30",
-      "entry_order_no": "260708000298614",
-      "exit_order_no": "260708000339026"
+      "entry_order_no": "260708000298614.0",
+      "exit_order_no": "260708000339026.0"
     },
     {
       "date": "2026-07-08",
@@ -1097,8 +1734,8 @@
       "pnl": 539.5,
       "entry_time": "2026-07-08T14:15:10.010176+05:30",
       "exit_time": "2026-07-08T14:45:06.379307+05:30",
-      "entry_order_no": "260708000298673",
-      "exit_order_no": "260708000339049"
+      "entry_order_no": "260708000298673.0",
+      "exit_order_no": "260708000339049.0"
     },
     {
       "date": "2026-07-09",
@@ -1111,8 +1748,8 @@
       "pnl": 2554.5,
       "entry_time": "2026-07-08T14:45:08.233858+05:30",
       "exit_time": "2026-07-09T09:30:06.406606+05:30",
-      "entry_order_no": "260708000339091",
-      "exit_order_no": "260709000047909"
+      "entry_order_no": "260708000339091.0",
+      "exit_order_no": "260709000047909.0"
     },
     {
       "date": "2026-07-09",
@@ -1125,8 +1762,8 @@
       "pnl": -331.5,
       "entry_time": "2026-07-08T14:45:10.103212+05:30",
       "exit_time": "2026-07-09T09:30:08.120489+05:30",
-      "entry_order_no": "260708000339119",
-      "exit_order_no": "260709000047983"
+      "entry_order_no": "260708000339119.0",
+      "exit_order_no": "260709000047983.0"
     },
     {
       "date": "2026-07-09",
@@ -1139,8 +1776,8 @@
       "pnl": -104.0,
       "entry_time": "2026-07-09T09:30:11.929980+05:30",
       "exit_time": "2026-07-09T10:45:04.810815+05:30",
-      "entry_order_no": "260709000048151",
-      "exit_order_no": "260709000173953"
+      "entry_order_no": "260709000048151.0",
+      "exit_order_no": "260709000173953.0"
     },
     {
       "date": "2026-07-09",
@@ -1153,8 +1790,8 @@
       "pnl": -302.25,
       "entry_time": "2026-07-09T09:30:10.044494+05:30",
       "exit_time": "2026-07-09T15:15:04.679811+05:30",
-      "entry_order_no": "260709000048060",
-      "exit_order_no": "260709000573716"
+      "entry_order_no": "260709000048060.0",
+      "exit_order_no": "260709000573716.0"
     },
     {
       "date": "2026-07-09",
@@ -1167,8 +1804,8 @@
       "pnl": 575.25,
       "entry_time": "2026-07-09T10:45:06.631990+05:30",
       "exit_time": "2026-07-09T15:15:06.380467+05:30",
-      "entry_order_no": "260709000174027",
-      "exit_order_no": "260709000573796"
+      "entry_order_no": "260709000174027.0",
+      "exit_order_no": "260709000573796.0"
     },
     {
       "date": "2026-07-10",
@@ -1181,8 +1818,8 @@
       "pnl": 1485.25,
       "entry_time": "2026-07-09T15:15:08.167795+05:30",
       "exit_time": "2026-07-10T09:15:05.935346+05:30",
-      "entry_order_no": "260709000573886",
-      "exit_order_no": "260710000004737"
+      "entry_order_no": "260709000573886.0",
+      "exit_order_no": "260710000004737.0"
     },
     {
       "date": "2026-07-10",
@@ -1195,8 +1832,8 @@
       "pnl": -1621.75,
       "entry_time": "2026-07-09T15:15:10.227068+05:30",
       "exit_time": "2026-07-10T09:15:08.069854+05:30",
-      "entry_order_no": "260709000573992",
-      "exit_order_no": "260710000004878"
+      "entry_order_no": "260709000573992.0",
+      "exit_order_no": "260710000004878.0"
     },
     {
       "date": "2026-07-10",
@@ -1209,8 +1846,8 @@
       "pnl": -78.0,
       "entry_time": "2026-07-10T09:15:11.851639+05:30",
       "exit_time": "2026-07-10T09:45:04.860982+05:30",
-      "entry_order_no": "260710000005130",
-      "exit_order_no": "260710000045822"
+      "entry_order_no": "260710000005130.0",
+      "exit_order_no": "260710000045822.0"
     },
     {
       "date": "2026-07-10",
@@ -1223,8 +1860,8 @@
       "pnl": -65.0,
       "entry_time": "2026-07-10T09:45:06.719083+05:30",
       "exit_time": "2026-07-10T10:00:05.297945+05:30",
-      "entry_order_no": "260710000045880",
-      "exit_order_no": "260710000057191"
+      "entry_order_no": "260710000045880.0",
+      "exit_order_no": "260710000057191.0"
     },
     {
       "date": "2026-07-13",
@@ -1237,8 +1874,8 @@
       "pnl": -126.75,
       "entry_time": "2026-07-10T09:15:09.960232+05:30",
       "exit_time": "2026-07-13T09:15:05.123203+05:30",
-      "entry_order_no": "260710000005011",
-      "exit_order_no": "260713000005908"
+      "entry_order_no": "260710000005011.0",
+      "exit_order_no": "260713000005908.0"
     },
     {
       "date": "2026-07-13",
@@ -1251,8 +1888,8 @@
       "pnl": 341.25,
       "entry_time": "2026-07-10T10:00:07.156573+05:30",
       "exit_time": "2026-07-13T09:15:07.057621+05:30",
-      "entry_order_no": "260710000057239",
-      "exit_order_no": "260713000006135"
+      "entry_order_no": "260710000057239.0",
+      "exit_order_no": "260713000006135.0"
     },
     {
       "date": "2026-07-13",
@@ -1265,8 +1902,8 @@
       "pnl": -198.25,
       "entry_time": "2026-07-13T09:15:12.040931+05:30",
       "exit_time": "2026-07-13T09:45:05.261164+05:30",
-      "entry_order_no": "260713000006585",
-      "exit_order_no": "260713000057181"
+      "entry_order_no": "260713000006585.0",
+      "exit_order_no": "260713000057181.0"
     },
     {
       "date": "2026-07-13",
@@ -1279,8 +1916,8 @@
       "pnl": -208.0,
       "entry_time": "2026-07-13T09:45:07.102009+05:30",
       "exit_time": "2026-07-13T10:00:05.434297+05:30",
-      "entry_order_no": "260713000057221",
-      "exit_order_no": "260713000075756"
+      "entry_order_no": "260713000057221.0",
+      "exit_order_no": "260713000075756.0"
     },
     {
       "date": "2026-07-13",
@@ -1293,8 +1930,8 @@
       "pnl": -604.5,
       "entry_time": "2026-07-13T10:00:07.295292+05:30",
       "exit_time": "2026-07-13T13:00:05.289766+05:30",
-      "entry_order_no": "260713000075791",
-      "exit_order_no": "260713000228816"
+      "entry_order_no": "260713000075791.0",
+      "exit_order_no": "260713000228816.0"
     },
     {
       "date": "2026-07-20",
@@ -1307,8 +1944,8 @@
       "pnl": 1261.0,
       "entry_time": "2026-07-17T12:00:05.943869+05:30",
       "exit_time": "2026-07-20T09:15:09.242822+05:30",
-      "entry_order_no": "260717000136317",
-      "exit_order_no": "260720000004842"
+      "entry_order_no": "260717000136317.0",
+      "exit_order_no": "260720000004842.0"
     },
     {
       "date": "2026-07-20",
@@ -1321,8 +1958,8 @@
       "pnl": 390.0,
       "entry_time": "2026-07-17T12:00:07.667976+05:30",
       "exit_time": "2026-07-20T09:15:10.951681+05:30",
-      "entry_order_no": "260717000136327",
-      "exit_order_no": "260720000004967"
+      "entry_order_no": "260717000136327.0",
+      "exit_order_no": "260720000004967.0"
     },
     {
       "date": "2026-07-20",
@@ -1335,8 +1972,8 @@
       "pnl": -279.5,
       "entry_time": "2026-07-20T09:15:12.800010+05:30",
       "exit_time": "2026-07-20T09:30:05.829018+05:30",
-      "entry_order_no": "260720000005090",
-      "exit_order_no": "260720000037115"
+      "entry_order_no": "260720000005090.0",
+      "exit_order_no": "260720000037115.0"
     },
     {
       "date": "2026-07-20",
@@ -1349,8 +1986,8 @@
       "pnl": 253.5,
       "entry_time": "2026-07-20T09:15:14.603213+05:30",
       "exit_time": "2026-07-20T09:30:07.562032+05:30",
-      "entry_order_no": "260720000005214",
-      "exit_order_no": "260720000037171"
+      "entry_order_no": "260720000005214.0",
+      "exit_order_no": "260720000037171.0"
     },
     {
       "date": "2026-07-20",
@@ -1993,8 +2630,8 @@
       "pnl": 601.25,
       "entry_time": "2026-07-20T09:30:09.445965+05:30",
       "exit_time": "2026-07-22T09:30:07.652303+05:30",
-      "entry_order_no": "260720000037226",
-      "exit_order_no": "260722000034175"
+      "entry_order_no": "260720000037226.0",
+      "exit_order_no": "260722000034175.0"
     },
     {
       "date": "2026-07-22",
@@ -2007,8 +2644,8 @@
       "pnl": 549.25,
       "entry_time": "2026-07-20T09:30:11.305158+05:30",
       "exit_time": "2026-07-22T09:30:09.680768+05:30",
-      "entry_order_no": "260720000037276",
-      "exit_order_no": "260722000034237"
+      "entry_order_no": "260720000037276.0",
+      "exit_order_no": "260722000034237.0"
     },
     {
       "date": "2026-07-22",
@@ -2441,8 +3078,8 @@
       "pnl": -1222.0,
       "entry_time": "2026-07-22T09:30:11.566622+05:30",
       "exit_time": "2026-07-23T09:15:10.328974+05:30",
-      "entry_order_no": "260722000034296",
-      "exit_order_no": "260723000005645"
+      "entry_order_no": "260722000034296.0",
+      "exit_order_no": "260723000005645.0"
     },
     {
       "date": "2026-07-23",
@@ -2455,8 +3092,8 @@
       "pnl": 666.25,
       "entry_time": "2026-07-22T09:30:13.481302+05:30",
       "exit_time": "2026-07-23T09:15:12.009115+05:30",
-      "entry_order_no": "260722000034337",
-      "exit_order_no": "260723000005775"
+      "entry_order_no": "260722000034337.0",
+      "exit_order_no": "260723000005775.0"
     },
     {
       "date": "2026-07-23",
@@ -2763,8 +3400,8 @@
       "pnl": -1407.25,
       "entry_time": "2026-07-23T09:15:13.818179+05:30",
       "exit_time": "2026-07-24T09:15:08.258893+05:30",
-      "entry_order_no": "260723000005907",
-      "exit_order_no": "260724000005219"
+      "entry_order_no": "260723000005907.0",
+      "exit_order_no": "260724000005219.0"
     },
     {
       "date": "2026-07-24",
@@ -2777,8 +3414,8 @@
       "pnl": 754.0,
       "entry_time": "2026-07-23T09:15:15.663799+05:30",
       "exit_time": "2026-07-24T09:15:10.008762+05:30",
-      "entry_order_no": "260723000006053",
-      "exit_order_no": "260724000005332"
+      "entry_order_no": "260723000006053.0",
+      "exit_order_no": "260724000005332.0"
     },
     {
       "date": "2026-07-24",
@@ -2791,8 +3428,8 @@
       "pnl": 188.5,
       "entry_time": "2026-07-24T09:15:11.909041+05:30",
       "exit_time": "2026-07-24T09:30:04.362860+05:30",
-      "entry_order_no": "260724000005441",
-      "exit_order_no": "260724000032385"
+      "entry_order_no": "260724000005441.0",
+      "exit_order_no": "260724000032385.0"
     },
     {
       "date": "2026-07-24",
@@ -2805,8 +3442,8 @@
       "pnl": -152.75,
       "entry_time": "2026-07-24T09:15:13.792632+05:30",
       "exit_time": "2026-07-24T09:30:06.086691+05:30",
-      "entry_order_no": "260724000005550",
-      "exit_order_no": "260724000032441"
+      "entry_order_no": "260724000005550.0",
+      "exit_order_no": "260724000032441.0"
     },
     {
       "date": "2026-07-24",
@@ -3057,8 +3694,8 @@
       "pnl": 1270.75,
       "entry_time": "2026-07-24T09:30:07.981176+05:30",
       "exit_time": "2026-07-27T09:15:12.525004+05:30",
-      "entry_order_no": "260724000032483",
-      "exit_order_no": "260727000005840"
+      "entry_order_no": "260724000032483.0",
+      "exit_order_no": "260727000005840.0"
     },
     {
       "date": "2026-07-27",
@@ -3071,8 +3708,8 @@
       "pnl": -874.25,
       "entry_time": "2026-07-24T09:30:09.871265+05:30",
       "exit_time": "2026-07-27T09:15:14.254579+05:30",
-      "entry_order_no": "260724000032533",
-      "exit_order_no": "260727000005927"
+      "entry_order_no": "260724000032533.0",
+      "exit_order_no": "260727000005927.0"
     },
     {
       "date": "2026-07-27",
@@ -3631,8 +4268,8 @@
       "pnl": 2132.0,
       "entry_time": "2026-07-27T09:15:16.101045+05:30",
       "exit_time": "2026-07-29T09:15:08.727271+05:30",
-      "entry_order_no": "260727000006090",
-      "exit_order_no": "260729000006710"
+      "entry_order_no": "260727000006090.0",
+      "exit_order_no": "260729000006710.0"
     },
     {
       "date": "2026-07-29",
@@ -3645,8 +4282,8 @@
       "pnl": -39.0,
       "entry_time": "2026-07-27T09:15:17.859385+05:30",
       "exit_time": "2026-07-29T09:15:10.433409+05:30",
-      "entry_order_no": "260727000006204",
-      "exit_order_no": "260729000006831"
+      "entry_order_no": "260727000006204.0",
+      "exit_order_no": "260729000006831.0"
     },
     {
       "date": "2026-07-29",
@@ -3659,8 +4296,8 @@
       "pnl": 78.0,
       "entry_time": "2026-07-29T09:15:14.107321+05:30",
       "exit_time": "2026-07-29T09:30:05.516394+05:30",
-      "entry_order_no": "260729000007029",
-      "exit_order_no": "260729000034028"
+      "entry_order_no": "260729000007029.0",
+      "exit_order_no": "260729000034028.0"
     },
     {
       "date": "2026-07-29",
@@ -4261,8 +4898,8 @@
       "pnl": 1625.0,
       "entry_time": "2026-07-29T09:15:12.248531+05:30",
       "exit_time": "2026-08-03T09:15:09.694014+05:30",
-      "entry_order_no": "260729000006927",
-      "exit_order_no": "260803000006438"
+      "entry_order_no": "260729000006927.0",
+      "exit_order_no": "260803000006438.0"
     },
     {
       "date": "2026-08-03",
@@ -4275,8 +4912,8 @@
       "pnl": -94.25,
       "entry_time": "2026-07-29T09:30:07.364927+05:30",
       "exit_time": "2026-08-03T09:15:11.385992+05:30",
-      "entry_order_no": "260729000034076",
-      "exit_order_no": "260803000006556"
+      "entry_order_no": "260729000034076.0",
+      "exit_order_no": "260803000006556.0"
     },
     {
       "date": "2026-08-03",
@@ -4289,8 +4926,8 @@
       "pnl": -130.0,
       "entry_time": "2026-08-03T09:15:15.018699+05:30",
       "exit_time": "2026-08-03T09:30:06.609488+05:30",
-      "entry_order_no": "260803000006849",
-      "exit_order_no": "260803000037066"
+      "entry_order_no": "260803000006849.0",
+      "exit_order_no": "260803000037066.0"
     },
     {
       "date": "2026-08-03",
@@ -4653,8 +5290,8 @@
       "pnl": 383.5,
       "entry_time": "2026-08-03T09:15:13.270848+05:30",
       "exit_time": "2026-08-04T12:15:05.976924+05:30",
-      "entry_order_no": "260803000006697",
-      "exit_order_no": "260804000240993"
+      "entry_order_no": "260803000006697.0",
+      "exit_order_no": "260804000240993.0"
     },
     {
       "date": "2026-08-04",
@@ -4667,8 +5304,8 @@
       "pnl": 52.0,
       "entry_time": "2026-08-03T09:30:08.456226+05:30",
       "exit_time": "2026-08-04T12:15:07.718293+05:30",
-      "entry_order_no": "260803000037129",
-      "exit_order_no": "260804000241019"
+      "entry_order_no": "260803000037129.0",
+      "exit_order_no": "260804000241019.0"
     },
     {
       "date": "2026-08-04",
@@ -4681,8 +5318,8 @@
       "pnl": -334.75,
       "entry_time": "2026-08-04T12:15:09.565294+05:30",
       "exit_time": "2026-08-04T13:30:07.533727+05:30",
-      "entry_order_no": "260804000241061",
-      "exit_order_no": "260804000306279"
+      "entry_order_no": "260804000241061.0",
+      "exit_order_no": "260804000306279.0"
     },
     {
       "date": "2026-08-04",
@@ -4695,8 +5332,8 @@
       "pnl": 35.75,
       "entry_time": "2026-08-04T12:15:11.430563+05:30",
       "exit_time": "2026-08-04T13:30:09.287006+05:30",
-      "entry_order_no": "260804000241101",
-      "exit_order_no": "260804000306340"
+      "entry_order_no": "260804000241101.0",
+      "exit_order_no": "260804000306340.0"
     },
     {
       "date": "2026-08-05",
@@ -4709,8 +5346,8 @@
       "pnl": 666.25,
       "entry_time": "2026-08-04T13:30:11.161418+05:30",
       "exit_time": "2026-08-05T09:15:08.430725+05:30",
-      "entry_order_no": "260804000306410",
-      "exit_order_no": "260805000005617"
+      "entry_order_no": "260804000306410.0",
+      "exit_order_no": "260805000005617.0"
     },
     {
       "date": "2026-08-05",
@@ -4723,8 +5360,8 @@
       "pnl": -471.25,
       "entry_time": "2026-08-04T13:30:13.087655+05:30",
       "exit_time": "2026-08-05T09:15:10.156204+05:30",
-      "entry_order_no": "260804000306478",
-      "exit_order_no": "260805000005738"
+      "entry_order_no": "260804000306478.0",
+      "exit_order_no": "260805000005738.0"
     },
     {
       "date": "2026-08-05",
@@ -4737,8 +5374,8 @@
       "pnl": 45.5,
       "entry_time": "2026-08-05T09:15:12.081633+05:30",
       "exit_time": "2026-08-05T09:30:04.567895+05:30",
-      "entry_order_no": "260805000005848",
-      "exit_order_no": "260805000034033"
+      "entry_order_no": "260805000005848.0",
+      "exit_order_no": "260805000034033.0"
     },
     {
       "date": "2026-08-05",
@@ -4751,8 +5388,8 @@
       "pnl": -448.5,
       "entry_time": "2026-08-05T09:30:06.597658+05:30",
       "exit_time": "2026-08-05T10:30:04.777133+05:30",
-      "entry_order_no": "260805000034096",
-      "exit_order_no": "260805000097148"
+      "entry_order_no": "260805000034096.0",
+      "exit_order_no": "260805000097148.0"
     },
     {
       "date": "2026-08-05",
@@ -4765,8 +5402,8 @@
       "pnl": 68.25,
       "entry_time": "2026-08-05T09:15:14.024815+05:30",
       "exit_time": "2026-08-05T10:30:06.565554+05:30",
-      "entry_order_no": "260805000005969",
-      "exit_order_no": "260805000097229"
+      "entry_order_no": "260805000005969.0",
+      "exit_order_no": "260805000097229.0"
     },
     {
       "date": "2026-08-05",
@@ -4779,8 +5416,8 @@
       "pnl": -55.25,
       "entry_time": "2026-08-05T10:30:10.426774+05:30",
       "exit_time": "2026-08-05T10:45:04.588782+05:30",
-      "entry_order_no": "260805000097359",
-      "exit_order_no": "260805000111826"
+      "entry_order_no": "260805000097359.0",
+      "exit_order_no": "260805000111826.0"
     },
     {
       "date": "2026-08-05",
@@ -4793,8 +5430,8 @@
       "pnl": -139.75,
       "entry_time": "2026-08-05T10:45:07.959614+05:30",
       "exit_time": "2026-08-05T11:00:05.027093+05:30",
-      "entry_order_no": "260805000111871",
-      "exit_order_no": "260805000124460"
+      "entry_order_no": "260805000111871.0",
+      "exit_order_no": "260805000124460.0"
     },
     {
       "date": "2026-08-05",
@@ -4807,8 +5444,8 @@
       "pnl": -711.75,
       "entry_time": "2026-08-05T10:30:08.507641+05:30",
       "exit_time": "2026-08-05T12:45:04.652906+05:30",
-      "entry_order_no": "260805000097294",
-      "exit_order_no": "260805000205837"
+      "entry_order_no": "260805000097294.0",
+      "exit_order_no": "260805000205837.0"
     },
     {
       "date": "2026-08-05",
@@ -4821,8 +5458,8 @@
       "pnl": 52.0,
       "entry_time": "2026-08-05T11:00:06.944246+05:30",
       "exit_time": "2026-08-05T12:45:06.480328+05:30",
-      "entry_order_no": "260805000124523",
-      "exit_order_no": "260805000205859"
+      "entry_order_no": "260805000124523.0",
+      "exit_order_no": "260805000205859.0"
     },
     {
       "date": "2026-08-05",
@@ -4835,8 +5472,8 @@
       "pnl": -123.5,
       "entry_time": "2026-08-05T12:45:10.494191+05:30",
       "exit_time": "2026-08-05T13:15:04.546410+05:30",
-      "entry_order_no": "260805000205921",
-      "exit_order_no": "260805000228381"
+      "entry_order_no": "260805000205921.0",
+      "exit_order_no": "260805000228381.0"
     },
     {
       "date": "2026-08-06",
@@ -4849,8 +5486,8 @@
       "pnl": 1046.5,
       "entry_time": "2026-08-05T12:45:08.375839+05:30",
       "exit_time": "2026-08-06T09:15:07.941616+05:30",
-      "entry_order_no": "260805000205887",
-      "exit_order_no": "260806000005537"
+      "entry_order_no": "260805000205887.0",
+      "exit_order_no": "260806000005537.0"
     },
     {
       "date": "2026-08-06",
@@ -4863,8 +5500,8 @@
       "pnl": 217.75,
       "entry_time": "2026-08-05T13:15:06.477334+05:30",
       "exit_time": "2026-08-06T09:15:09.600202+05:30",
-      "entry_order_no": "260805000228399",
-      "exit_order_no": "260806000005638"
+      "entry_order_no": "260805000228399.0",
+      "exit_order_no": "260806000005638.0"
     },
     {
       "date": "2026-08-06",
@@ -4877,8 +5514,8 @@
       "pnl": -282.75,
       "entry_time": "2026-08-06T09:15:17.744296+05:30",
       "exit_time": "2026-08-06T09:45:04.434196+05:30",
-      "entry_order_no": "260806000006208",
-      "exit_order_no": "260806000053869"
+      "entry_order_no": "260806000006208.0",
+      "exit_order_no": "260806000053869.0"
     },
     {
       "date": "2026-08-07",
@@ -4891,8 +5528,8 @@
       "pnl": -32.5,
       "entry_time": "2026-08-06T09:15:11.603863+05:30",
       "exit_time": "2026-08-07T09:15:08.675538+05:30",
-      "entry_order_no": "260806000005757",
-      "exit_order_no": "260807000004847"
+      "entry_order_no": "260806000005757.0",
+      "exit_order_no": "260807000004847.0"
     },
     {
       "date": "2026-08-07",
@@ -4905,8 +5542,8 @@
       "pnl": 412.75,
       "entry_time": "2026-08-06T09:45:06.254732+05:30",
       "exit_time": "2026-08-07T09:15:10.363660+05:30",
-      "entry_order_no": "260806000053933",
-      "exit_order_no": "260807000004951"
+      "entry_order_no": "260806000053933.0",
+      "exit_order_no": "260807000004951.0"
     },
     {
       "date": "2026-08-07",
@@ -4919,8 +5556,8 @@
       "pnl": -68.25,
       "entry_time": "2026-08-07T09:15:12.221281+05:30",
       "exit_time": "2026-08-07T09:30:03.922283+05:30",
-      "entry_order_no": "260807000005044",
-      "exit_order_no": "260807000026164"
+      "entry_order_no": "260807000005044.0",
+      "exit_order_no": "260807000026164.0"
     },
     {
       "date": "2026-08-07",
@@ -4933,8 +5570,8 @@
       "pnl": -425.75,
       "entry_time": "2026-08-07T09:15:14.116735+05:30",
       "exit_time": "2026-08-07T09:30:05.713451+05:30",
-      "entry_order_no": "260807000005132",
-      "exit_order_no": "260807000026219"
+      "entry_order_no": "260807000005132.0",
+      "exit_order_no": "260807000026219.0"
     },
     {
       "date": "2026-08-07",
@@ -4947,8 +5584,8 @@
       "pnl": 22.75,
       "entry_time": "2026-08-07T09:30:07.631233+05:30",
       "exit_time": "2026-08-07T09:45:04.575049+05:30",
-      "entry_order_no": "260807000026293",
-      "exit_order_no": "260807000038966"
+      "entry_order_no": "260807000026293.0",
+      "exit_order_no": "260807000038966.0"
     },
     {
       "date": "2026-08-07",
@@ -4961,8 +5598,8 @@
       "pnl": -143.0,
       "entry_time": "2026-08-07T09:30:09.452831+05:30",
       "exit_time": "2026-08-07T09:45:06.275672+05:30",
-      "entry_order_no": "260807000026350",
-      "exit_order_no": "260807000039008"
+      "entry_order_no": "260807000026350.0",
+      "exit_order_no": "260807000039008.0"
     },
     {
       "date": "2026-08-07",
@@ -4975,8 +5612,8 @@
       "pnl": -110.5,
       "entry_time": "2026-08-07T09:45:08.141698+05:30",
       "exit_time": "2026-08-07T10:15:04.376620+05:30",
-      "entry_order_no": "260807000039034",
-      "exit_order_no": "260807000059038"
+      "entry_order_no": "260807000039034.0",
+      "exit_order_no": "260807000059038.0"
     },
     {
       "date": "2026-08-07",
@@ -4989,8 +5626,8 @@
       "pnl": 178.75,
       "entry_time": "2026-08-07T09:45:10.092406+05:30",
       "exit_time": "2026-08-07T10:15:06.094797+05:30",
-      "entry_order_no": "260807000039056",
-      "exit_order_no": "260807000059058"
+      "entry_order_no": "260807000039056.0",
+      "exit_order_no": "260807000059058.0"
     },
     {
       "date": "2026-08-07",
@@ -5003,8 +5640,8 @@
       "pnl": -347.75,
       "entry_time": "2026-08-07T10:15:07.931388+05:30",
       "exit_time": "2026-08-07T12:15:03.879242+05:30",
-      "entry_order_no": "260807000059081",
-      "exit_order_no": "260807000123334"
+      "entry_order_no": "260807000059081.0",
+      "exit_order_no": "260807000123334.0"
     },
     {
       "date": "2026-08-07",
@@ -5017,8 +5654,8 @@
       "pnl": 455.0,
       "entry_time": "2026-08-07T10:15:09.807121+05:30",
       "exit_time": "2026-08-07T12:15:05.603600+05:30",
-      "entry_order_no": "260807000059130",
-      "exit_order_no": "260807000123356"
+      "entry_order_no": "260807000059130.0",
+      "exit_order_no": "260807000123356.0"
     },
     {
       "date": "2026-08-10",
@@ -5031,8 +5668,8 @@
       "pnl": 997.75,
       "entry_time": "2026-08-07T12:15:07.499404+05:30",
       "exit_time": "2026-08-10T09:15:10.302739+05:30",
-      "entry_order_no": "260807000123379",
-      "exit_order_no": "260810000005623"
+      "entry_order_no": "260807000123379.0",
+      "exit_order_no": "260810000005623.0"
     },
     {
       "date": "2026-08-10",
@@ -5045,8 +5682,8 @@
       "pnl": 650.0,
       "entry_time": "2026-08-07T12:15:09.446922+05:30",
       "exit_time": "2026-08-10T09:15:12.013418+05:30",
-      "entry_order_no": "260807000123397",
-      "exit_order_no": "260810000005702"
+      "entry_order_no": "260807000123397.0",
+      "exit_order_no": "260810000005702.0"
     },
     {
       "date": "2026-08-10",
@@ -5059,8 +5696,8 @@
       "pnl": -286.0,
       "entry_time": "2026-08-10T09:15:13.933842+05:30",
       "exit_time": "2026-08-10T09:45:05.274460+05:30",
-      "entry_order_no": "260810000005775",
-      "exit_order_no": "260810000050098"
+      "entry_order_no": "260810000005775.0",
+      "exit_order_no": "260810000050098.0"
     },
     {
       "date": "2026-08-10",
@@ -5073,8 +5710,8 @@
       "pnl": 178.75,
       "entry_time": "2026-08-10T09:15:15.608621+05:30",
       "exit_time": "2026-08-10T09:45:06.918870+05:30",
-      "entry_order_no": "260810000005866",
-      "exit_order_no": "260810000050130"
+      "entry_order_no": "260810000005866.0",
+      "exit_order_no": "260810000050130.0"
     },
     {
       "date": "2026-08-10",
@@ -5087,8 +5724,8 @@
       "pnl": 39.0,
       "entry_time": "2026-08-10T09:45:10.636702+05:30",
       "exit_time": "2026-08-10T10:00:05.307202+05:30",
-      "entry_order_no": "260810000050200",
-      "exit_order_no": "260810000062336"
+      "entry_order_no": "260810000050200.0",
+      "exit_order_no": "260810000062336.0"
     },
     {
       "date": "2026-08-10",
@@ -5101,8 +5738,8 @@
       "pnl": -9.75,
       "entry_time": "2026-08-10T10:00:07.175219+05:30",
       "exit_time": "2026-08-10T10:15:05.889101+05:30",
-      "entry_order_no": "260810000062357",
-      "exit_order_no": "260810000072677"
+      "entry_order_no": "260810000062357.0",
+      "exit_order_no": "260810000072677.0"
     },
     {
       "date": "2026-08-10",
@@ -5115,8 +5752,8 @@
       "pnl": -113.75,
       "entry_time": "2026-08-10T10:15:07.805813+05:30",
       "exit_time": "2026-08-10T10:30:06.861034+05:30",
-      "entry_order_no": "260810000072700",
-      "exit_order_no": "260810000089192"
+      "entry_order_no": "260810000072700.0",
+      "exit_order_no": "260810000089192.0"
     },
     {
       "date": "2026-08-11",
@@ -5129,8 +5766,8 @@
       "pnl": 471.25,
       "entry_time": "2026-08-10T09:45:08.749267+05:30",
       "exit_time": "2026-08-11T10:15:05.192367+05:30",
-      "entry_order_no": "260810000050165",
-      "exit_order_no": "260811000094619"
+      "entry_order_no": "260810000050165.0",
+      "exit_order_no": "260811000094619.0"
     },
     {
       "date": "2026-08-11",
@@ -5143,8 +5780,8 @@
       "pnl": 419.25,
       "entry_time": "2026-08-10T10:30:08.704191+05:30",
       "exit_time": "2026-08-11T10:15:06.889014+05:30",
-      "entry_order_no": "260810000089233",
-      "exit_order_no": "260811000094654"
+      "entry_order_no": "260810000089233.0",
+      "exit_order_no": "260811000094654.0"
     },
     {
       "date": "2026-08-12",
@@ -5157,8 +5794,8 @@
       "pnl": 6.5,
       "entry_time": "2026-08-11T10:15:08.739017+05:30",
       "exit_time": "2026-08-12T10:00:06.761379+05:30",
-      "entry_order_no": "260811000094687",
-      "exit_order_no": "260812000062965"
+      "entry_order_no": "260811000094687.0",
+      "exit_order_no": "260812000062965.0"
     },
     {
       "date": "2026-08-12",
@@ -5171,8 +5808,8 @@
       "pnl": 468.0,
       "entry_time": "2026-08-11T10:15:10.579456+05:30",
       "exit_time": "2026-08-12T10:00:08.413778+05:30",
-      "entry_order_no": "260811000094733",
-      "exit_order_no": "260812000063016"
+      "entry_order_no": "260811000094733.0",
+      "exit_order_no": "260812000063016.0"
     },
     {
       "date": "2026-08-12",
@@ -5185,8 +5822,8 @@
       "pnl": -399.75,
       "entry_time": "2026-08-12T10:00:10.271146+05:30",
       "exit_time": "2026-08-12T11:30:06.568149+05:30",
-      "entry_order_no": "260812000063083",
-      "exit_order_no": "260812000127166"
+      "entry_order_no": "260812000063083.0",
+      "exit_order_no": "260812000127166.0"
     },
     {
       "date": "2026-08-12",
@@ -5199,8 +5836,8 @@
       "pnl": 188.5,
       "entry_time": "2026-08-12T10:00:12.147039+05:30",
       "exit_time": "2026-08-12T11:30:08.219257+05:30",
-      "entry_order_no": "260812000063150",
-      "exit_order_no": "260812000127194"
+      "entry_order_no": "260812000063150.0",
+      "exit_order_no": "260812000127194.0"
     },
     {
       "date": "2026-08-17",
@@ -5213,8 +5850,8 @@
       "pnl": 822.25,
       "entry_time": "2026-08-12T11:30:10.019194+05:30",
       "exit_time": "2026-08-17T09:15:08.551645+05:30",
-      "entry_order_no": "260812000127223",
-      "exit_order_no": "260817000005368"
+      "entry_order_no": "260812000127223.0",
+      "exit_order_no": "260817000005368.0"
     },
     {
       "date": "2026-08-17",
@@ -5227,8 +5864,8 @@
       "pnl": 763.75,
       "entry_time": "2026-08-12T11:30:11.853396+05:30",
       "exit_time": "2026-08-17T09:15:10.330604+05:30",
-      "entry_order_no": "260812000127242",
-      "exit_order_no": "260817000005450"
+      "entry_order_no": "260812000127242.0",
+      "exit_order_no": "260817000005450.0"
     },
     {
       "date": "2026-08-17",
@@ -5241,8 +5878,8 @@
       "pnl": -42.25,
       "entry_time": "2026-08-17T09:15:12.202981+05:30",
       "exit_time": "2026-08-17T09:30:05.411185+05:30",
-      "entry_order_no": "260817000005539",
-      "exit_order_no": "260817000030810"
+      "entry_order_no": "260817000005539.0",
+      "exit_order_no": "260817000030810.0"
     },
     {
       "date": "2026-08-17",
@@ -5255,8 +5892,8 @@
       "pnl": 120.25,
       "entry_time": "2026-08-17T09:15:13.901981+05:30",
       "exit_time": "2026-08-17T09:30:07.068403+05:30",
-      "entry_order_no": "260817000005605",
-      "exit_order_no": "260817000030851"
+      "entry_order_no": "260817000005605.0",
+      "exit_order_no": "260817000030851.0"
     },
     {
       "date": "2026-08-17",
@@ -5269,8 +5906,8 @@
       "pnl": 19.5,
       "entry_time": "2026-08-17T09:30:09.170284+05:30",
       "exit_time": "2026-08-17T09:45:05.178124+05:30",
-      "entry_order_no": "260817000030901",
-      "exit_order_no": "260817000046650"
+      "entry_order_no": "260817000030901.0",
+      "exit_order_no": "260817000046650.0"
     },
     {
       "date": "2026-08-17",
@@ -5283,8 +5920,8 @@
       "pnl": -191.75,
       "entry_time": "2026-08-17T09:45:07.027251+05:30",
       "exit_time": "2026-08-17T10:30:05.627544+05:30",
-      "entry_order_no": "260817000046688",
-      "exit_order_no": "260817000083245"
+      "entry_order_no": "260817000046688.0",
+      "exit_order_no": "260817000083245.0"
     },
     {
       "date": "2026-08-17",
@@ -5297,8 +5934,8 @@
       "pnl": 91.0,
       "entry_time": "2026-08-17T09:30:10.985294+05:30",
       "exit_time": "2026-08-17T10:30:07.300182+05:30",
-      "entry_order_no": "260817000030939",
-      "exit_order_no": "260817000083266"
+      "entry_order_no": "260817000030939.0",
+      "exit_order_no": "260817000083266.0"
     },
     {
       "date": "2026-08-17",
@@ -5311,8 +5948,8 @@
       "pnl": 279.5,
       "entry_time": "2026-08-17T10:30:09.105211+05:30",
       "exit_time": "2026-08-17T13:00:05.850066+05:30",
-      "entry_order_no": "260817000083302",
-      "exit_order_no": "260817000183548"
+      "entry_order_no": "260817000083302.0",
+      "exit_order_no": "260817000183548.0"
     },
     {
       "date": "2026-08-17",
@@ -5325,8 +5962,8 @@
       "pnl": -321.75,
       "entry_time": "2026-08-17T10:30:11.017898+05:30",
       "exit_time": "2026-08-17T13:00:07.469188+05:30",
-      "entry_order_no": "260817000083330",
-      "exit_order_no": "260817000183589"
+      "entry_order_no": "260817000083330.0",
+      "exit_order_no": "260817000183589.0"
     },
     {
       "date": "2026-08-17",
@@ -5339,8 +5976,8 @@
       "pnl": 42.25,
       "entry_time": "2026-08-17T13:00:09.550926+05:30",
       "exit_time": "2026-08-17T13:15:06.058288+05:30",
-      "entry_order_no": "260817000183633",
-      "exit_order_no": "260817000194964"
+      "entry_order_no": "260817000183633.0",
+      "exit_order_no": "260817000194964.0"
     },
     {
       "date": "2026-08-17",
@@ -5353,8 +5990,8 @@
       "pnl": -61.75,
       "entry_time": "2026-08-17T13:00:11.536496+05:30",
       "exit_time": "2026-08-17T13:15:07.752169+05:30",
-      "entry_order_no": "260817000183701",
-      "exit_order_no": "260817000194986"
+      "entry_order_no": "260817000183701.0",
+      "exit_order_no": "260817000194986.0"
     },
     {
       "date": "2026-08-17",
@@ -5367,8 +6004,8 @@
       "pnl": -48.75,
       "entry_time": "2026-08-17T13:15:09.622279+05:30",
       "exit_time": "2026-08-17T14:00:05.135270+05:30",
-      "entry_order_no": "260817000195031",
-      "exit_order_no": "260817000219305"
+      "entry_order_no": "260817000195031.0",
+      "exit_order_no": "260817000219305.0"
     },
     {
       "date": "2026-08-17",
@@ -5381,8 +6018,8 @@
       "pnl": 107.25,
       "entry_time": "2026-08-17T13:15:11.605691+05:30",
       "exit_time": "2026-08-17T14:00:06.804760+05:30",
-      "entry_order_no": "260817000195063",
-      "exit_order_no": "260817000219321"
+      "entry_order_no": "260817000195063.0",
+      "exit_order_no": "260817000219321.0"
     },
     {
       "date": "2026-08-17",
@@ -5395,8 +6032,8 @@
       "pnl": 35.75,
       "entry_time": "2026-08-17T14:00:08.628198+05:30",
       "exit_time": "2026-08-17T14:45:05.309923+05:30",
-      "entry_order_no": "260817000219350",
-      "exit_order_no": "260817000242642"
+      "entry_order_no": "260817000219350.0",
+      "exit_order_no": "260817000242642.0"
     },
     {
       "date": "2026-08-18",
@@ -5409,8 +6046,8 @@
       "pnl": -182.0,
       "entry_time": "2026-08-18T09:30:05.134763+05:30",
       "exit_time": "2026-08-18T11:00:04.846474+05:30",
-      "entry_order_no": "260818000048685",
-      "exit_order_no": "260818000143107"
+      "entry_order_no": "260818000048685.0",
+      "exit_order_no": "260818000143107.0"
     },
     {
       "date": "2026-08-18",
@@ -5423,8 +6060,8 @@
       "pnl": 406.25,
       "entry_time": "2026-08-17T14:00:10.457439+05:30",
       "exit_time": "2026-08-18T11:00:06.556732+05:30",
-      "entry_order_no": "260817000219376",
-      "exit_order_no": "260818000143144"
+      "entry_order_no": "260817000219376.0",
+      "exit_order_no": "260818000143144.0"
     },
     {
       "date": "2026-08-19",
@@ -5437,8 +6074,8 @@
       "pnl": -286.0,
       "entry_time": "2026-08-18T11:00:08.386243+05:30",
       "exit_time": "2026-08-19T09:30:05.408180+05:30",
-      "entry_order_no": "260818000143168",
-      "exit_order_no": "260819000028530"
+      "entry_order_no": "260818000143168.0",
+      "exit_order_no": "260819000028530.0"
     },
     {
       "date": "2026-08-19",
@@ -5451,8 +6088,8 @@
       "pnl": 308.75,
       "entry_time": "2026-08-18T11:00:10.290085+05:30",
       "exit_time": "2026-08-19T09:30:07.046139+05:30",
-      "entry_order_no": "260818000143200",
-      "exit_order_no": "260819000028570"
+      "entry_order_no": "260818000143200.0",
+      "exit_order_no": "260819000028570.0"
     },
     {
       "date": "2026-08-19",
@@ -5465,8 +6102,8 @@
       "pnl": 22.75,
       "entry_time": "2026-08-19T09:30:08.863087+05:30",
       "exit_time": "2026-08-19T10:45:04.805494+05:30",
-      "entry_order_no": "260819000028617",
-      "exit_order_no": "260819000090057"
+      "entry_order_no": "260819000028617.0",
+      "exit_order_no": "260819000090057.0"
     },
     {
       "date": "2026-08-19",
@@ -5479,8 +6116,8 @@
       "pnl": 97.5,
       "entry_time": "2026-08-19T09:30:10.764480+05:30",
       "exit_time": "2026-08-19T10:45:06.465087+05:30",
-      "entry_order_no": "260819000028661",
-      "exit_order_no": "260819000090068"
+      "entry_order_no": "260819000028661.0",
+      "exit_order_no": "260819000090068.0"
     },
     {
       "date": "2026-08-20",
@@ -5493,8 +6130,8 @@
       "pnl": 351.0,
       "entry_time": "2026-08-19T10:45:08.243641+05:30",
       "exit_time": "2026-08-20T09:15:08.072959+05:30",
-      "entry_order_no": "260819000090086",
-      "exit_order_no": "260820000005900"
+      "entry_order_no": "260819000090086.0",
+      "exit_order_no": "260820000005900.0"
     },
     {
       "date": "2026-08-20",
@@ -5507,8 +6144,8 @@
       "pnl": -429.0,
       "entry_time": "2026-08-19T10:45:10.038708+05:30",
       "exit_time": "2026-08-20T09:15:09.731253+05:30",
-      "entry_order_no": "260819000090115",
-      "exit_order_no": "260820000006040"
+      "entry_order_no": "260819000090115.0",
+      "exit_order_no": "260820000006040.0"
     },
     {
       "date": "2026-08-20",
@@ -5521,8 +6158,8 @@
       "pnl": 39.0,
       "entry_time": "2026-08-20T09:15:11.619256+05:30",
       "exit_time": "2026-08-20T09:30:04.514813+05:30",
-      "entry_order_no": "260820000006177",
-      "exit_order_no": "260820000040767"
+      "entry_order_no": "260820000006177.0",
+      "exit_order_no": "260820000040767.0"
     },
     {
       "date": "2026-08-20",
@@ -5535,8 +6172,8 @@
       "pnl": 130.0,
       "entry_time": "2026-08-20T09:15:13.507244+05:30",
       "exit_time": "2026-08-20T09:30:06.163854+05:30",
-      "entry_order_no": "260820000006323",
-      "exit_order_no": "260820000040855"
+      "entry_order_no": "260820000006323.0",
+      "exit_order_no": "260820000040855.0"
     },
     {
       "date": "2026-08-20",
@@ -5549,8 +6186,8 @@
       "pnl": 263.25,
       "entry_time": "2026-08-17T14:45:07.183533+05:30",
       "exit_time": "2026-08-20T09:45:04.262530+05:30",
-      "entry_order_no": "260817000242653",
-      "exit_order_no": "260820000060415"
+      "entry_order_no": "260817000242653.0",
+      "exit_order_no": "260820000060415.0"
     },
     {
       "date": "2026-08-20",
@@ -5563,8 +6200,8 @@
       "pnl": -32.5,
       "entry_time": "2026-08-20T09:30:09.781533+05:30",
       "exit_time": "2026-08-20T09:45:05.907276+05:30",
-      "entry_order_no": "260820000040996",
-      "exit_order_no": "260820000060453"
+      "entry_order_no": "260820000040996.0",
+      "exit_order_no": "260820000060453.0"
     },
     {
       "date": "2026-08-20",
@@ -5577,8 +6214,8 @@
       "pnl": 6.5,
       "entry_time": "2026-08-20T09:45:07.728125+05:30",
       "exit_time": "2026-08-20T10:00:04.508600+05:30",
-      "entry_order_no": "260820000060499",
-      "exit_order_no": "260820000075567"
+      "entry_order_no": "260820000060499.0",
+      "exit_order_no": "260820000075567.0"
     },
     {
       "date": "2026-08-20",
@@ -5591,8 +6228,8 @@
       "pnl": 16.25,
       "entry_time": "2026-08-20T09:45:09.744302+05:30",
       "exit_time": "2026-08-20T10:00:06.137346+05:30",
-      "entry_order_no": "260820000060559",
-      "exit_order_no": "260820000075593"
+      "entry_order_no": "260820000060559.0",
+      "exit_order_no": "260820000075593.0"
     },
     {
       "date": "2026-08-20",
@@ -5605,8 +6242,8 @@
       "pnl": -19.5,
       "entry_time": "2026-08-20T10:00:09.780001+05:30",
       "exit_time": "2026-08-20T10:15:04.732585+05:30",
-      "entry_order_no": "260820000075640",
-      "exit_order_no": "260820000088757"
+      "entry_order_no": "260820000075640.0",
+      "exit_order_no": "260820000088757.0"
     },
     {
       "date": "2026-08-24",
@@ -5619,8 +6256,8 @@
       "pnl": 445.25,
       "entry_time": "2026-08-20T10:00:07.993386+05:30",
       "exit_time": "2026-08-24T09:15:08.763592+05:30",
-      "entry_order_no": "260820000075615",
-      "exit_order_no": "260824000005824"
+      "entry_order_no": "260820000075615.0",
+      "exit_order_no": "260824000005824.0"
     },
     {
       "date": "2026-08-24",
@@ -5633,8 +6270,8 @@
       "pnl": 282.75,
       "entry_time": "2026-08-20T10:15:06.601391+05:30",
       "exit_time": "2026-08-24T09:15:10.357803+05:30",
-      "entry_order_no": "260820000088803",
-      "exit_order_no": "260824000005909"
+      "entry_order_no": "260820000088803.0",
+      "exit_order_no": "260824000005909.0"
     },
     {
       "date": "2026-08-24",
@@ -5647,8 +6284,8 @@
       "pnl": 35.75,
       "entry_time": "2026-08-24T09:15:13.797168+05:30",
       "exit_time": "2026-08-24T09:30:06.037537+05:30",
-      "entry_order_no": "260824000006053",
-      "exit_order_no": "260824000029995"
+      "entry_order_no": "260824000006053.0",
+      "exit_order_no": "260824000029995.0"
     },
     {
       "date": "2026-08-24",
@@ -5661,8 +6298,8 @@
       "pnl": -188.5,
       "entry_time": "2026-08-24T09:15:12.137663+05:30",
       "exit_time": "2026-08-24T11:00:06.432476+05:30",
-      "entry_order_no": "260824000005990",
-      "exit_order_no": "260824000092288"
+      "entry_order_no": "260824000005990.0",
+      "exit_order_no": "260824000092288.0"
     },
     {
       "date": "2026-08-24",
@@ -5675,8 +6312,8 @@
       "pnl": 0.0,
       "entry_time": "2026-08-24T09:30:07.836984+05:30",
       "exit_time": "2026-08-24T11:00:08.107749+05:30",
-      "entry_order_no": "260824000030051",
-      "exit_order_no": "260824000092404"
+      "entry_order_no": "260824000030051.0",
+      "exit_order_no": "260824000092404.0"
     },
     {
       "date": "2026-08-24",
@@ -5689,8 +6326,8 @@
       "pnl": -253.5,
       "entry_time": "2026-08-24T11:00:09.844248+05:30",
       "exit_time": "2026-08-24T11:15:06.152625+05:30",
-      "entry_order_no": "260824000092502",
-      "exit_order_no": "260824000110433"
+      "entry_order_no": "260824000092502.0",
+      "exit_order_no": "260824000110433.0"
     },
     {
       "date": "2026-08-24",
@@ -5703,8 +6340,8 @@
       "pnl": 39.0,
       "entry_time": "2026-08-24T11:00:11.592800+05:30",
       "exit_time": "2026-08-24T11:15:07.796179+05:30",
-      "entry_order_no": "260824000092631",
-      "exit_order_no": "260824000110476"
+      "entry_order_no": "260824000092631.0",
+      "exit_order_no": "260824000110476.0"
     },
     {
       "date": "2026-08-24",
@@ -5717,8 +6354,8 @@
       "pnl": -198.25,
       "entry_time": "2026-08-24T11:15:09.553546+05:30",
       "exit_time": "2026-08-24T12:00:07.245501+05:30",
-      "entry_order_no": "260824000110533",
-      "exit_order_no": "260824000150679"
+      "entry_order_no": "260824000110533.0",
+      "exit_order_no": "260824000150679.0"
     },
     {
       "date": "2026-08-24",
@@ -5731,8 +6368,8 @@
       "pnl": -32.5,
       "entry_time": "2026-08-24T11:15:11.315427+05:30",
       "exit_time": "2026-08-24T12:00:08.979526+05:30",
-      "entry_order_no": "260824000110594",
-      "exit_order_no": "260824000150705"
+      "entry_order_no": "260824000110594.0",
+      "exit_order_no": "260824000150705.0"
     },
     {
       "date": "2026-08-26",
@@ -5745,8 +6382,8 @@
       "pnl": 624.0,
       "entry_time": "2026-08-24T12:00:10.821896+05:30",
       "exit_time": "2026-08-26T09:15:08.219423+05:30",
-      "entry_order_no": "260824000150726",
-      "exit_order_no": "260826000005047"
+      "entry_order_no": "260824000150726.0",
+      "exit_order_no": "260826000005047.0"
     },
     {
       "date": "2026-08-26",
@@ -5759,8 +6396,8 @@
       "pnl": -178.75,
       "entry_time": "2026-08-24T12:00:12.678195+05:30",
       "exit_time": "2026-08-26T09:15:09.884376+05:30",
-      "entry_order_no": "260824000150743",
-      "exit_order_no": "260826000005133"
+      "entry_order_no": "260824000150743.0",
+      "exit_order_no": "260826000005133.0"
     },
     {
       "date": "2026-08-26",
@@ -5773,8 +6410,8 @@
       "pnl": -185.25,
       "entry_time": "2026-08-26T09:15:11.667295+05:30",
       "exit_time": "2026-08-26T10:30:04.840527+05:30",
-      "entry_order_no": "260826000005215",
-      "exit_order_no": "260826000082542"
+      "entry_order_no": "260826000005215.0",
+      "exit_order_no": "260826000082542.0"
     },
     {
       "date": "2026-08-26",
@@ -5787,8 +6424,8 @@
       "pnl": 71.5,
       "entry_time": "2026-08-26T09:15:13.454900+05:30",
       "exit_time": "2026-08-26T10:30:06.455565+05:30",
-      "entry_order_no": "260826000005286",
-      "exit_order_no": "260826000082558"
+      "entry_order_no": "260826000005286.0",
+      "exit_order_no": "260826000082558.0"
     },
     {
       "date": "2026-08-26",
@@ -5801,8 +6438,8 @@
       "pnl": 81.25,
       "entry_time": "2026-08-26T10:30:08.288181+05:30",
       "exit_time": "2026-08-26T10:45:04.588905+05:30",
-      "entry_order_no": "260826000082577",
-      "exit_order_no": "260826000091586"
+      "entry_order_no": "260826000082577.0",
+      "exit_order_no": "260826000091586.0"
     },
     {
       "date": "2026-08-26",
@@ -5815,8 +6452,8 @@
       "pnl": -32.5,
       "entry_time": "2026-08-26T10:30:10.068362+05:30",
       "exit_time": "2026-08-26T10:45:06.232376+05:30",
-      "entry_order_no": "260826000082592",
-      "exit_order_no": "260826000091606"
+      "entry_order_no": "260826000082592.0",
+      "exit_order_no": "260826000091606.0"
     },
     {
       "date": "2026-08-26",
@@ -5829,8 +6466,8 @@
       "pnl": -9.75,
       "entry_time": "2026-08-26T10:45:09.943828+05:30",
       "exit_time": "2026-08-26T11:15:04.516192+05:30",
-      "entry_order_no": "260826000091652",
-      "exit_order_no": "260826000107205"
+      "entry_order_no": "260826000091652.0",
+      "exit_order_no": "260826000107205.0"
     },
     {
       "date": "2026-08-26",
@@ -5843,8 +6480,8 @@
       "pnl": -107.25,
       "entry_time": "2026-08-26T10:45:08.011549+05:30",
       "exit_time": "2026-08-26T11:30:04.864820+05:30",
-      "entry_order_no": "260826000091619",
-      "exit_order_no": "260826000116078"
+      "entry_order_no": "260826000091619.0",
+      "exit_order_no": "260826000116078.0"
     },
     {
       "date": "2026-08-26",
@@ -5857,8 +6494,8 @@
       "pnl": 16.25,
       "entry_time": "2026-08-26T11:15:06.289386+05:30",
       "exit_time": "2026-08-26T11:30:06.486108+05:30",
-      "entry_order_no": "260826000107223",
-      "exit_order_no": "260826000116089"
+      "entry_order_no": "260826000107223.0",
+      "exit_order_no": "260826000116089.0"
     },
     {
       "date": "2026-08-26",
@@ -5871,8 +6508,8 @@
       "pnl": -6.5,
       "entry_time": "2026-08-26T11:30:10.202610+05:30",
       "exit_time": "2026-08-26T11:45:04.396643+05:30",
-      "entry_order_no": "260826000116127",
-      "exit_order_no": "260826000126567"
+      "entry_order_no": "260826000116127.0",
+      "exit_order_no": "260826000126567.0"
     },
     {
       "date": "2026-08-26",
@@ -5885,8 +6522,8 @@
       "pnl": -104.0,
       "entry_time": "2026-08-26T11:30:08.344841+05:30",
       "exit_time": "2026-08-26T12:15:04.661436+05:30",
-      "entry_order_no": "260826000116102",
-      "exit_order_no": "260826000145853"
+      "entry_order_no": "260826000116102.0",
+      "exit_order_no": "260826000145853.0"
     },
     {
       "date": "2026-08-26",
@@ -5899,8 +6536,8 @@
       "pnl": 3.25,
       "entry_time": "2026-08-26T11:45:06.160038+05:30",
       "exit_time": "2026-08-26T12:15:06.326229+05:30",
-      "entry_order_no": "260826000126576",
-      "exit_order_no": "260826000145890"
+      "entry_order_no": "260826000126576.0",
+      "exit_order_no": "260826000145890.0"
     },
     {
       "date": "2026-08-27",
@@ -5913,8 +6550,8 @@
       "pnl": -162.5,
       "entry_time": "2026-08-26T12:15:08.140819+05:30",
       "exit_time": "2026-08-27T10:30:05.392365+05:30",
-      "entry_order_no": "260826000145913",
-      "exit_order_no": "260827000106395"
+      "entry_order_no": "260826000145913.0",
+      "exit_order_no": "260827000106395.0"
     },
     {
       "date": "2026-08-27",
@@ -5927,8 +6564,8 @@
       "pnl": 334.75,
       "entry_time": "2026-08-26T12:15:09.946603+05:30",
       "exit_time": "2026-08-27T10:30:07.084581+05:30",
-      "entry_order_no": "260826000145938",
-      "exit_order_no": "260827000106413"
+      "entry_order_no": "260826000145938.0",
+      "exit_order_no": "260827000106413.0"
     },
     {
       "date": "2026-08-27",
@@ -5941,8 +6578,8 @@
       "pnl": 130.0,
       "entry_time": "2026-08-27T10:30:08.929928+05:30",
       "exit_time": "2026-08-27T13:15:04.831422+05:30",
-      "entry_order_no": "260827000106433",
-      "exit_order_no": "260827000247975"
+      "entry_order_no": "260827000106433.0",
+      "exit_order_no": "260827000247975.0"
     },
     {
       "date": "2026-08-27",
@@ -5955,8 +6592,8 @@
       "pnl": -61.75,
       "entry_time": "2026-08-27T10:30:10.862819+05:30",
       "exit_time": "2026-08-27T13:15:06.214758+05:30",
-      "entry_order_no": "260827000106453",
-      "exit_order_no": "260827000247997"
+      "entry_order_no": "260827000106453.0",
+      "exit_order_no": "260827000247997.0"
     },
     {
       "date": "2026-08-27",
@@ -5969,8 +6606,8 @@
       "pnl": -58.5,
       "entry_time": "2026-08-27T13:15:07.806262+05:30",
       "exit_time": "2026-08-27T13:30:04.914240+05:30",
-      "entry_order_no": "260827000248021",
-      "exit_order_no": "260827000259330"
+      "entry_order_no": "260827000248021.0",
+      "exit_order_no": "260827000259330.0"
     },
     {
       "date": "2026-08-27",
@@ -5983,8 +6620,8 @@
       "pnl": 45.5,
       "entry_time": "2026-08-27T13:15:09.358674+05:30",
       "exit_time": "2026-08-27T13:30:06.288097+05:30",
-      "entry_order_no": "260827000248043",
-      "exit_order_no": "260827000259352"
+      "entry_order_no": "260827000248043.0",
+      "exit_order_no": "260827000259352.0"
     },
     {
       "date": "2026-08-27",
@@ -5997,8 +6634,8 @@
       "pnl": -279.5,
       "entry_time": "2026-08-27T13:30:07.826282+05:30",
       "exit_time": "2026-08-27T14:00:05.090240+05:30",
-      "entry_order_no": "260827000259368",
-      "exit_order_no": "260827000294199"
+      "entry_order_no": "260827000259368.0",
+      "exit_order_no": "260827000294199.0"
     },
     {
       "date": "2026-08-27",
@@ -6011,8 +6648,8 @@
       "pnl": 110.5,
       "entry_time": "2026-08-27T13:30:09.368847+05:30",
       "exit_time": "2026-08-27T14:00:06.467660+05:30",
-      "entry_order_no": "260827000259393",
-      "exit_order_no": "260827000294224"
+      "entry_order_no": "260827000259393.0",
+      "exit_order_no": "260827000294224.0"
     },
     {
       "date": "2026-08-27",
@@ -6025,8 +6662,8 @@
       "pnl": 175.5,
       "entry_time": "2026-08-27T14:00:08.037838+05:30",
       "exit_time": "2026-08-27T14:30:04.978961+05:30",
-      "entry_order_no": "260827000294251",
-      "exit_order_no": "260827000323749"
+      "entry_order_no": "260827000294251.0",
+      "exit_order_no": "260827000323749.0"
     },
     {
       "date": "2026-08-27",
@@ -6039,8 +6676,8 @@
       "pnl": -143.0,
       "entry_time": "2026-08-27T14:00:09.815101+05:30",
       "exit_time": "2026-08-27T14:30:06.402848+05:30",
-      "entry_order_no": "260827000294285",
-      "exit_order_no": "260827000323807"
+      "entry_order_no": "260827000294285.0",
+      "exit_order_no": "260827000323807.0"
     },
     {
       "date": "2026-08-27",
@@ -6053,8 +6690,8 @@
       "pnl": -97.5,
       "entry_time": "2026-08-27T14:30:07.974914+05:30",
       "exit_time": "2026-08-27T14:45:05.195300+05:30",
-      "entry_order_no": "260827000323862",
-      "exit_order_no": "260827000339676"
+      "entry_order_no": "260827000323862.0",
+      "exit_order_no": "260827000339676.0"
     },
     {
       "date": "2026-08-31",
@@ -6067,8 +6704,8 @@
       "pnl": 172.25,
       "entry_time": "2026-08-27T14:45:06.727495+05:30",
       "exit_time": "2026-08-31T09:15:07.732739+05:30",
-      "entry_order_no": "260827000339705",
-      "exit_order_no": "260831000004998"
+      "entry_order_no": "260827000339705.0",
+      "exit_order_no": "260831000004998.0"
     },
     {
       "date": "2026-08-31",
@@ -6081,8 +6718,8 @@
       "pnl": 776.75,
       "entry_time": "2026-08-27T14:30:09.484624+05:30",
       "exit_time": "2026-08-31T09:15:09.127830+05:30",
-      "entry_order_no": "260827000323922",
-      "exit_order_no": "260831000005103"
+      "entry_order_no": "260827000323922.0",
+      "exit_order_no": "260831000005103.0"
     },
     {
       "date": "2026-08-31",
@@ -6095,8 +6732,8 @@
       "pnl": -224.25,
       "entry_time": "2026-08-31T09:15:10.739852+05:30",
       "exit_time": "2026-08-31T09:30:04.973609+05:30",
-      "entry_order_no": "260831000005213",
-      "exit_order_no": "260831000033262"
+      "entry_order_no": "260831000005213.0",
+      "exit_order_no": "260831000033262.0"
     },
     {
       "date": "2026-08-31",
@@ -6109,8 +6746,8 @@
       "pnl": 71.5,
       "entry_time": "2026-08-31T09:15:12.095850+05:30",
       "exit_time": "2026-08-31T09:30:06.341196+05:30",
-      "entry_order_no": "260831000005295",
-      "exit_order_no": "260831000033299"
+      "entry_order_no": "260831000005295.0",
+      "exit_order_no": "260831000033299.0"
     },
     {
       "date": "2026-08-31",
@@ -6123,8 +6760,8 @@
       "pnl": -81.25,
       "entry_time": "2026-08-31T09:30:07.867590+05:30",
       "exit_time": "2026-08-31T09:45:05.037980+05:30",
-      "entry_order_no": "260831000033340",
-      "exit_order_no": "260831000048237"
+      "entry_order_no": "260831000033340.0",
+      "exit_order_no": "260831000048237.0"
     },
     {
       "date": "2026-08-31",
@@ -6137,8 +6774,8 @@
       "pnl": 39.0,
       "entry_time": "2026-08-31T09:30:09.418831+05:30",
       "exit_time": "2026-08-31T09:45:06.422349+05:30",
-      "entry_order_no": "260831000033392",
-      "exit_order_no": "260831000048254"
+      "entry_order_no": "260831000033392.0",
+      "exit_order_no": "260831000048254.0"
     },
     {
       "date": "2026-09-02",
@@ -6151,8 +6788,8 @@
       "pnl": -835.25,
       "entry_time": "2026-08-31T09:45:07.941192+05:30",
       "exit_time": "2026-09-02T09:15:08.623271+05:30",
-      "entry_order_no": "260831000048288",
-      "exit_order_no": "260902000005236"
+      "entry_order_no": "260831000048288.0",
+      "exit_order_no": "260902000005236.0"
     },
     {
       "date": "2026-09-02",
@@ -6165,8 +6802,8 @@
       "pnl": 445.25,
       "entry_time": "2026-08-31T09:45:09.446808+05:30",
       "exit_time": "2026-09-02T09:15:09.968161+05:30",
-      "entry_order_no": "260831000048317",
-      "exit_order_no": "260902000005335"
+      "entry_order_no": "260831000048317.0",
+      "exit_order_no": "260902000005335.0"
     },
     {
       "date": "2026-09-02",
@@ -6179,8 +6816,8 @@
       "pnl": 240.5,
       "entry_time": "2026-09-02T09:15:11.492322+05:30",
       "exit_time": "2026-09-02T10:30:06.132940+05:30",
-      "entry_order_no": "260902000005430",
-      "exit_order_no": "260902000085664"
+      "entry_order_no": "260902000005430.0",
+      "exit_order_no": "260902000085664.0"
     },
     {
       "date": "2026-09-02",
@@ -6193,8 +6830,8 @@
       "pnl": -126.75,
       "entry_time": "2026-09-02T09:15:13.043290+05:30",
       "exit_time": "2026-09-02T10:30:07.550607+05:30",
-      "entry_order_no": "260902000005540",
-      "exit_order_no": "260902000085682"
+      "entry_order_no": "260902000005540.0",
+      "exit_order_no": "260902000085682.0"
     },
     {
       "date": "2026-09-02",
@@ -6207,8 +6844,8 @@
       "pnl": -344.5,
       "entry_time": "2026-09-02T10:30:09.087196+05:30",
       "exit_time": "2026-09-02T11:30:05.284665+05:30",
-      "entry_order_no": "260902000085701",
-      "exit_order_no": "260902000126863"
+      "entry_order_no": "260902000085701.0",
+      "exit_order_no": "260902000126863.0"
     },
     {
       "date": "2026-09-02",
@@ -6221,8 +6858,8 @@
       "pnl": 100.75,
       "entry_time": "2026-09-02T10:30:10.638912+05:30",
       "exit_time": "2026-09-02T11:30:06.601264+05:30",
-      "entry_order_no": "260902000085738",
-      "exit_order_no": "260902000126876"
+      "entry_order_no": "260902000085738.0",
+      "exit_order_no": "260902000126876.0"
     },
     {
       "date": "2026-09-02",
@@ -6235,8 +6872,8 @@
       "pnl": -55.25,
       "entry_time": "2026-09-02T11:30:09.658555+05:30",
       "exit_time": "2026-09-02T12:30:05.935269+05:30",
-      "entry_order_no": "260902000126894",
-      "exit_order_no": "260902000162063"
+      "entry_order_no": "260902000126894.0",
+      "exit_order_no": "260902000162063.0"
     },
     {
       "date": "2026-09-03",
@@ -6249,8 +6886,8 @@
       "pnl": 799.5,
       "entry_time": "2026-09-02T11:30:08.118755+05:30",
       "exit_time": "2026-09-03T09:15:07.615119+05:30",
-      "entry_order_no": "260902000126882",
-      "exit_order_no": "260903000005202"
+      "entry_order_no": "260902000126882.0",
+      "exit_order_no": "260903000005202.0"
     },
     {
       "date": "2026-09-03",
@@ -6263,8 +6900,8 @@
       "pnl": -39.0,
       "entry_time": "2026-09-02T12:30:07.514710+05:30",
       "exit_time": "2026-09-03T09:15:09.082990+05:30",
-      "entry_order_no": "260902000162082",
-      "exit_order_no": "260903000005330"
+      "entry_order_no": "260902000162082.0",
+      "exit_order_no": "260903000005330.0"
     },
     {
       "date": "2026-09-03",
@@ -6277,8 +6914,8 @@
       "pnl": 201.5,
       "entry_time": "2026-09-03T09:15:10.627788+05:30",
       "exit_time": "2026-09-03T09:45:04.326882+05:30",
-      "entry_order_no": "260903000005476",
-      "exit_order_no": "260903000060361"
+      "entry_order_no": "260903000005476.0",
+      "exit_order_no": "260903000060361.0"
     },
     {
       "date": "2026-09-03",
@@ -6291,8 +6928,8 @@
       "pnl": -55.25,
       "entry_time": "2026-09-03T09:15:12.241932+05:30",
       "exit_time": "2026-09-03T09:45:05.701089+05:30",
-      "entry_order_no": "260903000005589",
-      "exit_order_no": "260903000060418"
+      "entry_order_no": "260903000005589.0",
+      "exit_order_no": "260903000060418.0"
     },
     {
       "date": "2026-09-03",
@@ -6305,8 +6942,8 @@
       "pnl": -656.5,
       "entry_time": "2026-09-03T09:45:07.217163+05:30",
       "exit_time": "2026-09-03T11:15:04.241059+05:30",
-      "entry_order_no": "260903000060464",
-      "exit_order_no": "260903000146656"
+      "entry_order_no": "260903000060464.0",
+      "exit_order_no": "260903000146656.0"
     },
     {
       "date": "2026-09-03",
@@ -6319,8 +6956,8 @@
       "pnl": 123.5,
       "entry_time": "2026-09-03T09:45:08.758028+05:30",
       "exit_time": "2026-09-03T11:15:05.562835+05:30",
-      "entry_order_no": "260903000060515",
-      "exit_order_no": "260903000146690"
+      "entry_order_no": "260903000060515.0",
+      "exit_order_no": "260903000146690.0"
     },
     {
       "date": "2026-09-03",
@@ -6333,24 +6970,66 @@
       "pnl": -78.0,
       "entry_time": "2026-09-03T11:15:08.678149+05:30",
       "exit_time": "2026-09-03T11:30:04.309106+05:30",
-      "entry_order_no": "260903000146761",
-      "exit_order_no": "260903000162237"
+      "entry_order_no": "260903000146761.0",
+      "exit_order_no": "260903000162237.0"
+    },
+    {
+      "date": "2026-09-07",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2690823600PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 19.4,
+      "exit_price": 10.4,
+      "pnl": 585.0,
+      "entry_time": "2026-09-03T11:15:07.110029+05:30",
+      "exit_time": "2026-09-07T10:15:04.584246+05:30",
+      "entry_order_no": "260903000146722.0",
+      "exit_order_no": "260907000058262.0"
+    },
+    {
+      "date": "2026-09-07",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2690824400CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 9.45,
+      "exit_price": 2.35,
+      "pnl": 461.5,
+      "entry_time": "2026-09-03T11:30:05.829121+05:30",
+      "exit_time": "2026-09-07T10:15:05.968107+05:30",
+      "entry_order_no": "260903000162295.0",
+      "exit_order_no": "260907000058307.0"
+    },
+    {
+      "date": "2026-09-07",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY2691523350PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 18.1,
+      "exit_price": 19.0,
+      "pnl": -58.5,
+      "entry_time": "2026-09-07T10:15:07.554522+05:30",
+      "exit_time": "2026-09-07T10:30:04.953025+05:30",
+      "entry_order_no": "260907000058336.0",
+      "exit_order_no": "260907000068579.0"
     }
   ],
   "open_positions": [
     {
       "strategy": "Range Strangle",
       "symbol": "NIFTY2671423800PE",
-      "quantity": -65,
+      "quantity": -130,
       "latest_price": 0.05,
-      "open_mtm": -3.25
+      "open_mtm": -6.5
     },
     {
       "strategy": "Range Strangle",
       "symbol": "NIFTY2671425150CE",
-      "quantity": -65,
+      "quantity": -130,
       "latest_price": 0.05,
-      "open_mtm": -3.25
+      "open_mtm": -6.5
     },
     {
       "strategy": "Range Strangle",
@@ -6368,17 +7047,17 @@
     },
     {
       "strategy": "Range Strangle",
-      "symbol": "NIFTY2690823600PE",
+      "symbol": "NIFTY2691523300PE",
       "quantity": -65,
-      "latest_price": 7.05,
-      "open_mtm": -458.25
+      "latest_price": 19.15,
+      "open_mtm": -1244.75
     },
     {
       "strategy": "Range Strangle",
-      "symbol": "NIFTY2690824400CE",
+      "symbol": "NIFTY2691524350CE",
       "quantity": -65,
-      "latest_price": 3.0,
-      "open_mtm": -195.0
+      "latest_price": 12.8,
+      "open_mtm": -832.0
     },
     {
       "strategy": "Range Strangle",
@@ -6389,9 +7068,9 @@
     }
   ],
   "audit": {
-    "successful_order_count": 857,
+    "successful_order_count": 955,
     "failed_order_count_by_strategy": {
-      "Range Strangle": 1,
+      "Range Strangle": 5,
       "ATM Imbalance": 10
     },
     "priced_order_report": "/home/ubuntu/trading/nifty-range-predictor-private/reports/combined_live_priced_orders.csv"
