@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-09-10",
-  "training_start": "2019-09-13",
-  "training_end": "2026-09-10",
+  "last_updated": "2026-09-11",
+  "training_start": "2019-09-16",
+  "training_end": "2026-09-11",
   "rows_total_raw": 1738,
   "rows_used_for_modelling": 1737,
   "return_deciles": 10,
