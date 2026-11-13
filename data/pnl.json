@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-11-12",
+  "last_updated": "2026-11-13",
   "source": "combined_live_order_logs",
   "summary": {
-    "total_pnl": 90122.5,
-    "total_return_pct": 22.53,
+    "total_pnl": 91939.25,
+    "total_return_pct": 22.98,
     "capital_base": 400000.0,
-    "trade_count": 742,
-    "win_rate_pct": 49.73,
-    "average_pnl": -21.51,
+    "trade_count": 747,
+    "win_rate_pct": 49.93,
+    "average_pnl": -18.37,
     "best_trade": 3802.5,
     "worst_trade": -5362.5
   },
   "strategies": {
     "range_strangle": {
-      "total_pnl": 105163.5,
-      "total_return_pct": 52.58,
+      "total_pnl": 106980.25,
+      "total_return_pct": 53.49,
       "capital_base": 200000.0,
-      "trade_count": 523,
-      "win_rate_pct": 49.9,
-      "average_pnl": -1.76,
+      "trade_count": 528,
+      "win_rate_pct": 50.19,
+      "average_pnl": 2.49,
       "best_trade": 3802.5,
       "worst_trade": -5362.5
     },
@@ -705,6 +705,13 @@
       "open_mtm": 72049.25,
       "cumulative_pnl": 90122.5,
       "return_pct": 22.53
+    },
+    {
+      "date": "2026-11-13",
+      "cash": 18089.5,
+      "open_mtm": 73849.75,
+      "cumulative_pnl": 91939.25,
+      "return_pct": 22.98
     }
   ],
   "trades": [
@@ -11095,6 +11102,76 @@
       "exit_time": "2026-11-12T13:00:06.638460+05:30",
       "entry_order_no": "261112000350054.0",
       "exit_order_no": "261112000421241.0"
+    },
+    {
+      "date": "2026-11-13",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY26NOV24600PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 76.8,
+      "exit_price": 78.25,
+      "pnl": -94.25,
+      "entry_time": "2026-11-12T12:15:12.565213+05:30",
+      "exit_time": "2026-11-13T09:15:09.975473+05:30",
+      "entry_order_no": "261112000349959.0",
+      "exit_order_no": "261113000007672.0"
+    },
+    {
+      "date": "2026-11-13",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY26NOV26050CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 56.35,
+      "exit_price": 39.05,
+      "pnl": 1124.5,
+      "entry_time": "2026-11-12T13:00:09.207368+05:30",
+      "exit_time": "2026-11-13T09:15:12.382595+05:30",
+      "entry_order_no": "261112000421315.0",
+      "exit_order_no": "261113000007887.0"
+    },
+    {
+      "date": "2026-11-13",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY26NOV25900CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 52.65,
+      "exit_price": 52.1,
+      "pnl": 35.75,
+      "entry_time": "2026-11-13T09:15:17.480322+05:30",
+      "exit_time": "2026-11-13T09:45:06.736861+05:30",
+      "entry_order_no": "261113000008340.0",
+      "exit_order_no": "261113000077861.0"
+    },
+    {
+      "date": "2026-11-13",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY26NOV24550PE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 70.1,
+      "exit_price": 66.05,
+      "pnl": 263.25,
+      "entry_time": "2026-11-13T09:15:14.907788+05:30",
+      "exit_time": "2026-11-13T12:15:06.894878+05:30",
+      "entry_order_no": "261113000008089.0",
+      "exit_order_no": "261113000244376.0"
+    },
+    {
+      "date": "2026-11-13",
+      "strategy": "Range Strangle",
+      "symbol": "NIFTY26NOV25950CE",
+      "side": "SHORT_OPTION",
+      "quantity": 65,
+      "entry_price": 46.15,
+      "exit_price": 32.15,
+      "pnl": 910.0,
+      "entry_time": "2026-11-13T09:45:09.292331+05:30",
+      "exit_time": "2026-11-13T12:15:09.273820+05:30",
+      "entry_order_no": "261113000077955.0",
+      "exit_order_no": "261113000244447.0"
     }
   ],
   "open_positions": [
@@ -11163,17 +11240,17 @@
     },
     {
       "strategy": "Range Strangle",
-      "symbol": "NIFTY26NOV24600PE",
+      "symbol": "NIFTY26NOV24500PE",
       "quantity": -65,
-      "latest_price": 58.25,
-      "open_mtm": -3786.25
+      "latest_price": 44.65,
+      "open_mtm": -2902.25
     },
     {
       "strategy": "Range Strangle",
-      "symbol": "NIFTY26NOV26050CE",
+      "symbol": "NIFTY26NOV25850CE",
       "quantity": -65,
-      "latest_price": 61.05,
-      "open_mtm": -3968.25
+      "latest_price": 46.95,
+      "open_mtm": -3051.75
     },
     {
       "strategy": "Range Strangle",
@@ -11198,7 +11275,7 @@
     }
   ],
   "audit": {
-    "successful_order_count": 1500,
+    "successful_order_count": 1510,
     "failed_order_count_by_strategy": {
       "Range Strangle": 48,
       "ATM Imbalance": 10
